@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-right-panel',
+  selector: 'right-panel',
   templateUrl: './right-panel.component.html',
   styleUrls: ['./right-panel.component.css']
 })
