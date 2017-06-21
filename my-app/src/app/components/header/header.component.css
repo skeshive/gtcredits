@@ -11,3 +11,7 @@
     line-height: 55px;
     font-family: 'Raleway';
 }
+
+.header-icons {
+  float: right;
+}
