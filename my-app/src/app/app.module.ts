@@ -17,6 +17,9 @@ import { RightPanelComponent } from './components/right-panel/right-panel.compon
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    RightPanelComponent
+  ]
 })
 export class AppModule { }

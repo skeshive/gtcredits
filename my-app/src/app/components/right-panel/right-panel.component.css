@@ -1,5 +1,6 @@
 .container {
   background-color: #eeb211;
+  overflow-y: scroll;
 }
 
 .row {
@@ -47,7 +48,21 @@
   border: 0px;
 }
 
+.label {
+  background-color: white;
+  color: #00254c;
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+}
+
 .credits {
   color: #00254c;
-  font-size: 55px;
+  font-size: 50px;
+  line-height: 50px;
 }
