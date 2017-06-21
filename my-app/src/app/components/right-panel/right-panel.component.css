@@ -20,7 +20,7 @@
   font-size: 24px;
   text-decoration: underline;
   font-family: 'Roboto Condensed';
-  padding-top: 3%;
+  padding-top: 1%;
 }
 
 .right-content {
@@ -44,6 +44,17 @@
   font-size: 16px;
   margin-top: 2%;
   width: 100px;
+  height: 35px;
+  border: 0px;
+}
+
+.reset {
+  background-color: #00254c;
+  color: white;
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  margin-top: 4%;
+  width: 300px;
   height: 35px;
   border: 0px;
 }
