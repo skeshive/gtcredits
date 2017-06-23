@@ -4,12 +4,19 @@ body, html {
   height:100%;
 }
 
-.container-fluid {
+#left {
     position: absolute;
     top: 5px;
     bottom: 0;
     left: 0;
-    width: 100%;
+    overflow-y: scroll;
+}
+
+#right {
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    right: 0;
     overflow-y: scroll;
 }
 
@@ -17,9 +24,34 @@ body, html {
     margin-bottom: 5px;
 }
 
-.alignleft {
-	float: left;
+#y1 {
+    color: #000000;
+    background-color:#ffef99;
 }
-.alignright {
-	float: right;
+
+#y2 {
+    color: #000000;
+    background-color:#ffe766;
+}
+
+#y3 {
+    color: #000000;
+    background-color:#ffdf32;
+}
+
+#y4 {
+    color: #000000;
+    background-color:#ffd700;
+}
+#add {
+    color: #000000;
+    background-color: #d8d8d8;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+.btn-group {
+    padding:1px;
 }
