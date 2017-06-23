@@ -1,6 +1,5 @@
 .container {
   background-color: #FFD700;
-  overflow-y: scroll;
 }
 
 .row {
@@ -17,9 +16,9 @@
 
 .right-header {
   color: black;
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: underline;
-  font-family: 'Roboto Condensed';
+  font-family: 'Raleway';
   padding-top: 1%;
 }
 
@@ -40,7 +39,7 @@
 .submit {
   background-color: #00254c;
   color: white;
-  font-family: 'Roboto Condensed';
+  font-family: 'Raleway';
   font-size: 16px;
   margin-top: 2%;
   width: 100px;
@@ -51,7 +50,7 @@
 .reset {
   background-color: #00254c;
   color: white;
-  font-family: 'Roboto Condensed';
+  font-family: 'Raleway';
   font-size: 16px;
   margin-top: 4%;
   width: 300px;

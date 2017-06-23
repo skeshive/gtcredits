@@ -9,7 +9,7 @@ body, html {
     top: 5px;
     bottom: 0;
     left: 0;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 #right {
@@ -17,11 +17,19 @@ body, html {
     top: 5px;
     bottom: 0;
     right: 0;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .card {
     margin-bottom: 5px;
+}
+
+.card-header {
+  font-family: "Raleway";
+}
+
+.card-title {
+  font-family: "Raleway";
 }
 
 #y1 {
@@ -54,4 +62,16 @@ body, html {
 }
 .btn-group {
     padding:1px;
+}
+
+.btn-secondary {
+  font-family: 'Roboto Condensed';
+}
+
+.btn-outline-secondary {
+  font-family: "Roboto Condensed";
+}
+
+.btn-primary {
+  font-family: "Raleway";
 }
