@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector:'header',
@@ -9,5 +9,4 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 export class HeaderComponent { }
 
-export class NgbdDropdownBasic {
-}
+export class NgbdDropdownBasic { }
