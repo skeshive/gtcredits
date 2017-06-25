@@ -43,12 +43,13 @@ body, html {
     display: flex;
     justify-content: center;
 }
-.btn-group {
-    padding:1px;
-}
 
 .btn-secondary {
   font-family: 'Roboto Condensed';
+}
+
+.btn-secondary:focus {
+  background-color: #FFD700;
 }
 
 .btn-outline-secondary {
