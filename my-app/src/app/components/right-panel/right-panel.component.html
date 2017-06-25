@@ -8,46 +8,64 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row"><div class="right-header"> ADDED SCORES </div></div>
-      <br><div class="row"><i> **Please Add Scores to Continue** </i></div><br>
-      <div class="row"><button class="btn btn-primary submit"> SUBMIT </button></div>
-      <hr style="border-top: dotted 0.5px;">
-      <!-- <div class="row-content">
-        <div class="numbers"> 1. </div>
-        <div class="right-content">
-          AP US History - 5
-          <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-      </div> -->
-
-    <div class="row"><div class="right-header"> TRANSLATED COURSES </div></div>
-      <div class="row">
-        <br><div class="credits"> - </div><br>
-      </div>
-      <hr style="border-top: dotted 0.5px;">
-      <!-- <div class="row-content">
-        <div class="numbers"> 1. </div>
-        <div class="right-content"> HIST 1XXX - 3hrs </div>
-      </div> -->
-
-    <div class="row"><div class="right-header"> ADDITIONAL FULFILMENTS </div></div>
-      <div class="row">
-        <div class="badge badge-default"> N/A </div>
-      </div>
-      <hr style="border-top: dotted 0.5px;">
-
-    <div class="row"><div class="right-header"> CREDITS </div></div>
-      <div class="row">
-        <div class="credits"> - </div>
-      </div>
-      <hr style="border-top: dotted 0.5px;">
-
-    <div class="row"><div class="right-header"> CLASS STANDING </div></div>
-      <div class="row"><div class="badge badge-default"> N/A </div></div>
-      <hr style="border-top: dotted 0.5px;">
-      <div class="row"><button class="btn btn-primary reset"> RESET </button></div>
+  <div class="container" *ngIf="noSubmittedScores; else submittedScores">
+    <div class="row">
+      <div class="right-header"> ADDED SCORES </div>
+    </div>
   </div>
+
+  <ng-template #submittedScores>
+    <div class="container">
+      <div class="row">
+        <div class="right-header"> ADDED SCORES </div>
+      </div>
+      <div class="row">
+        <div class="label-contents"> AP US HISTORY <span class="badge"> 5 </span></div>
+        <div class="label-contents"> AP CHEMISTRY <span class="badge"> 5 </span></div>
+        <div class="label-contents" style="color:red"> AP SPANISH LANGUAGE <span class="badge"> 3 </span></div>
+      </div>
+      <hr style="border-top: dotted 0.5px;">
+
+      <div class="row">
+        <div class="right-header"> TRANSLATED COURSES </div>
+      </div>
+        <div class="row">
+          <div class="label-contents"> HIST 1XXX  <span class="badge"> 3 </span></div>
+          <div class="label-contents"> CHEM 1212K  <span class="badge"> 4 </span></div>
+          <div class="label-contents"> N/A <span class="badge"> 0 </span></div>
+        </div>
+      <hr style="border-top: dotted 0.5px;">
+
+      <div class="row">
+        <div class="right-header"> ADDITIONAL FULFILMENTS </div>
+      </div>
+      <div class="row">
+        <div class="label"> CORE AREA A </div>
+        <div class="label"> CORE AREA B </div>
+        <div class="label"> CORE AREA C </div>
+      </div>
+      <hr style="border-top: dotted 0.5px;">
+
+      <div class="row">
+        <div class="right-header"> CREDITS </div>
+      </div>
+      <div class="row">
+        <div class="credits"> 100 </div>
+      </div>
+      <hr style="border-top: dotted 0.5px;">
+
+      <div class="row">
+        <div class="right-header"> CLASS STANDING </div>
+      </div>
+      <div class="row">
+        <div class="label"> SOPHOMORE </div>
+      </div>
+      <hr style="border-top: dotted 0.5px;">
+      <div class="row">
+        <button class="reset"> RESET </button>
+      </div>
+    </div>
+  </ng-template>
 
 </body>
 </html>
