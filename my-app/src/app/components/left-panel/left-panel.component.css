@@ -1,23 +1,16 @@
 body, html {
-  margin: 0;
   overflow: hidden;
   height:100%;
 }
 
-#left {
+.scrollable {
     position: absolute;
+    width: 99%;
     top: 5px;
-    bottom: 0;
-    left: 0;
-    overflow: scroll;
-}
-
-#right {
-    position: absolute;
-    top: 5px;
-    bottom: 0;
-    right: 0;
-    overflow: scroll;
+    left: 5px;
+    right: 5px;
+    bottom: 0px;
+    overflow-y: scroll;
 }
 
 .card {

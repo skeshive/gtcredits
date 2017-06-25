@@ -5,13 +5,26 @@
   border-radius: 0px;
 }
 
-.navbar a {
-    color: white;
+.navbar-brand {
     font-size: 28px;
     line-height: 55px;
     font-family: 'Raleway';
 }
 
+#white {
+    color: white;
+}
+
 .header-icons {
   float: right;
+}
+
+.btn {
+    background-color: #323232;
+    color:white;
+}
+
+.dropdown-item {
+    color: black;
+
 }
