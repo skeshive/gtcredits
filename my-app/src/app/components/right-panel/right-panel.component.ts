@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'right-panel',
@@ -10,5 +10,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 export class RightPanelComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
-  noSubmittedScores: boolean = true;
+  noSubmittedScores: boolean = false;
+
 }

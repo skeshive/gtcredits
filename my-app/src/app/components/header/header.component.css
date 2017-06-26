@@ -9,6 +9,7 @@
     font-size: 28px;
     line-height: 55px;
     font-family: 'Raleway';
+    color: black;
 }
 
 .header-icons {
@@ -18,9 +19,4 @@
 .btn {
     background-color: #323232;
     color: white;
-}
-
-.dropdown-item {
-    color: black;
-    font-family: "Raleway";
 }

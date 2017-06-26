@@ -26,4 +26,5 @@ import { RightPanelComponent } from './components/right-panel/right-panel.compon
     LeftPanelComponent
   ]
 })
+
 export class AppModule { }
