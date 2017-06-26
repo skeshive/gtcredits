@@ -15,35 +15,6 @@ body, html {
   font-family: "Raleway";
 }
 
-#y1 {
-    color: #000000;
-    background-color:#ffef99;
-}
-
-#y2 {
-    color: #000000;
-    background-color:#ffe766;
-}
-
-#y3 {
-    color: #000000;
-    background-color:#ffdf32;
-}
-
-#y4 {
-    color: #000000;
-    background-color:#ffd700;
-}
-#add {
-    color: #000000;
-    background-color: #d8d8d8;
-}
-
-#wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .btn-secondary {
   font-family: 'Roboto Condensed';
 }
@@ -58,4 +29,9 @@ body, html {
 
 .btn-primary {
   font-family: "Raleway";
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
 }
