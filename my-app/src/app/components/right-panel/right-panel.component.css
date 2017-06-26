@@ -23,7 +23,7 @@
   border: 0px;
 }
 
-.reset {
+.btn.reset {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
@@ -35,7 +35,16 @@
   border: 0px;
 }
 
-.add {
+.btn.reset:hover {
+  color: #323232;
+  background-color: white;
+  border-color: #323232;
+  margin: 1%;
+  opacity: .95;
+  width: 100px;
+}
+
+.btn.add {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
@@ -44,6 +53,15 @@
   width: 120px;
   height: 35px;
   border: 0px;
+}
+
+.btn.add:hover {
+  color: #323232;
+  background-color: white;
+  border-color: #323232;
+  margin: 1%;
+  opacity: .95;
+  width: 100px;
 }
 
 .label {
@@ -82,8 +100,7 @@
   background-color: black;
   opacity: .75;
   border-radius: 30px;
-  width: 20px;
-  height: 20px;
+  margin-left: 5px;
 }
 
 .btn {
@@ -92,9 +109,11 @@
   border-color: #323232;
   margin: 1%;
   opacity: .95;
-  width: 40px;
+  width: auto;
 }
 
-input {
-  width: 50px;
+.btn:hover {
+  color: #323232;
+  background-color:white;
+  border-color: white;
 }
