@@ -11,31 +11,38 @@
         <div class="right-header"> ADD SELECTED SCORE </div>
 
         <div *ngIf="apExamSelected">
-            <a href="#" class="btn btn-outline-secondary">1</a>
-            <a href="#" class="btn btn-outline-secondary">2</a>
-            <a href="#" class="btn btn-outline-secondary">3</a>
-            <a href="#" class="btn btn-outline-secondary">4</a>
-            <a href="#" class="btn btn-outline-secondary">5</a>
+            <a href="#" class="btn">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+            <a href="#" class="btn">5</a>
         </div>
 
         <div *ngIf="ibHighExamSelected || ibStandardExamSelected">
-            <a href="#" class="btn btn-outline-secondary">1</a>
-            <a href="#" class="btn btn-outline-secondary">2</a>
-            <a href="#" class="btn btn-outline-secondary">3</a>
-            <a href="#" class="btn btn-outline-secondary">4</a>
-            <a href="#" class="btn btn-outline-secondary">5</a>
-            <a href="#" class="btn btn-outline-secondary">6</a>
-            <a href="#" class="btn btn-outline-secondary">7</a>
+            <a href="#" class="btn">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+            <a href="#" class="btn">5</a>
+            <a href="#" class="btn">6</a>
+            <a href="#" class="btn">7</a>
         </div>
 
         <div *ngIf="satExamSelected">
-            <input type="text" placeholder="0-800">
+            <input class="form-control text-center" style="display:inline-block; width: 100px;" type="text" placeholder="0-800">
         </div>
-            <button class="add"> ADD </button>
+            <button type="button" class="btn add"> ADD </button>
     </div>
 
     <ng-template #submittedScores>
         <div class="container">
+            <div class="right-header"> ADDED SCORES </div>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success"> AP US HISTORY <span class="badge badge-default badge-pill">5</span> </li>
+                <li class="list-group-item list-group-item-success"> AP CHEMISTRY <span class="badge badge-default badge-pill">5</span> </li>
+                <li class="list-group-item list-group-item-danger"> AP SPANISH LANGUAGE <span class="badge badge-danger badge-pill">3</span> </li>
+            </ul>
+            <!-- original styling --!>
             <div class="right-header"> ADDED SCORES </div>
             <div class="label-contents"> AP US HISTORY <span class="badge"> 5 </span> </div>
             <div class="label-contents"> AP CHEMISTRY <span class="badge"> 5 </span> </div>
@@ -46,6 +53,14 @@
             <div class="label-contents"> HIST 1XXX <span class="badge"> 3 </span> </div>
             <div class="label-contents"> CHEM 1212K  <span class="badge"> 4 </span> </div>
             <div class="label-contents"> N/A <span class="badge"> 0 </span> </div>
+            <hr style="border-top: dotted 0.5px;">
+            <-->
+
+            <div class="right-header"> TRANSLATED COURSES </div>
+            <ul class="list-group">
+                <li class="list-group-item justify-content-between"> HIST 2111 <span class="badge badge-default badge-pill">3 hrs</span> </li>
+                <li class="list-group-item justify-content-between"> CHEM 1212K <span class="badge badge-default badge-pill ">4 hrs</span> </li>
+            </ul>
             <hr style="border-top: dotted 0.5px;">
 
             <div class="right-header"> ADDITIONAL FULFILMENTS </div>
@@ -62,7 +77,7 @@
             <div class="label"> SOPHOMORE </div>
             <hr style="border-top: dotted 0.5px;">
 
-            <button class="reset"> RESET </button>
+            <button class="btn reset"> RESET </button>
             <hr style="border-top: dotted 0.5px;">
         </div>
     </ng-template>

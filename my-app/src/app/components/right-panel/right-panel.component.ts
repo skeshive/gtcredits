@@ -10,6 +10,5 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 export class RightPanelComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
-  noSubmittedScores: boolean = true;
-
+  noSubmittedScores: boolean = false;
 }
