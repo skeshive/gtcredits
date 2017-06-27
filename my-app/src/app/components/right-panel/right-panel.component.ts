@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { ScoreSelectService } from '/Users/Shreya/desktop/gtcredits/my-app/src/app/services/score-select.service';
+
 @Component({
   selector: 'right-panel',
   templateUrl: './right-panel.component.html',
@@ -8,7 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class RightPanelComponent implements OnInit {
-  constructor() { }
+  constructor(private _scoreSelect: ScoreSelectService) { }
   ngOnInit() { }
-  noSubmittedScores: boolean = false;
+  noSubmittedScores: boolean = true;
 }

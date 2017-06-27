@@ -10,7 +10,7 @@
         <div class="right-header" role="group"> ADDED SCORES </div>
         <div class="right-header"> ADD SELECTED SCORE </div>
 
-        <div *ngIf="apExamSelected">
+        <div *ngIf="_scoreSelect.apExamSelected">
             <a href="#" class="btn">1</a>
             <a href="#" class="btn">2</a>
             <a href="#" class="btn">3</a>
@@ -18,7 +18,7 @@
             <a href="#" class="btn">5</a>
         </div>
 
-        <div *ngIf="ibHighExamSelected || ibStandardExamSelected">
+        <div *ngIf="_scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected">
             <a href="#" class="btn">1</a>
             <a href="#" class="btn">2</a>
             <a href="#" class="btn">3</a>
@@ -28,7 +28,7 @@
             <a href="#" class="btn">7</a>
         </div>
 
-        <div *ngIf="satExamSelected">
+        <div *ngIf="_scoreSelect.satExamSelected">
             <input class="form-control text-center" style="display:inline-block; width: 100px;" type="text" placeholder="0-800">
         </div>
             <button type="button" class="btn add"> ADD </button>
