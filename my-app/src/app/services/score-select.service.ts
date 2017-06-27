@@ -10,18 +10,22 @@ export class ScoreSelectService {
   constructor() { }
 
   public apClicked() {
+    this.reset();
     this.apExamSelected = true;
   }
 
   public ibHighClicked() {
+    this.reset();
     this.ibHighExamSelected = true;
   }
 
   public ibStandardClicked() {
+    this.reset();
     this.ibStandardExamSelected = true;
   }
 
   public satClicked() {
+    this.reset();
     this.satExamSelected = true;
   }
 
