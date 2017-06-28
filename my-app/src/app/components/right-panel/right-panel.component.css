@@ -1,7 +1,7 @@
 .container {
   background-color: #FFD700;
   text-align:center;
-  position:relative;
+  position:absolute;
 }
 
 .right-header {
