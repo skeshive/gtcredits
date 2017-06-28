@@ -20,3 +20,8 @@
     background-color: #323232;
     color: white;
 }
+
+.modal-footer {
+    color: #323232;
+    font-size: 15px;
+}
