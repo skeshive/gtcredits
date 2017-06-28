@@ -4,14 +4,16 @@ import { AddExamService } from './add-exam.service';
 
 @Injectable()
 export class ScoreSelectService {
-
+  currName: string;
   apExamSelected: boolean = false;
   ibHighExamSelected: boolean = false;
   ibStandardExamSelected: boolean = false;
   satExamSelected: boolean = false;
   constructor(private _addExam: AddExamService) { }
 
-  public apClicked() {
+  public apClicked(currName: string) {
+    this.currName = currName;
+    alert(this.currName);
     this.reset();
     this.apExamSelected = true;
     this._addExam.createNewExam("ADD AP NAME HERE", "AP");
