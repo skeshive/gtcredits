@@ -1,4 +1,4 @@
-Standard IB {
+IB-Standard {
 	"Biology": {"scores":[6,7], "course":"BIOL 1510", "hours":4},
 	"Chemistry": {"scores":[6,7], "course":"CHEM 1XXX", "hours":4},
 	"Computer Science": {"scores":[6,7], "course":"CS 1XXX", "hours":3},

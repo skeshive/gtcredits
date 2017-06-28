@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { ScoreSelectService } from '/Users/Shreya/desktop/gtcredits/my-app/src/app/services/score-select.service';
+import { ScoreSelectService } from '../../services/score-select.service';
 
 @Component({
   selector: 'right-panel',

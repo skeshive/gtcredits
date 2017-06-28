@@ -5,11 +5,7 @@ export class Exam {
   private score: number;
   private type: string;
 
-  constructor(name, score, type) {
-    this.name = name;
-    this.score = score;
-    this.type = type;
-  }
+  constructor() { }
 
   public getName(): string {
     return this.name;
@@ -21,5 +17,17 @@ export class Exam {
 
   public getType(): string {
     return this.type;
+  }
+
+  public setName(name: string) {
+    this.name = name;
+  }
+
+  public setScore(score:number) {
+    this.score = score;
+  }
+
+  public setType(type: string) {
+    this.type = type;
   }
 }

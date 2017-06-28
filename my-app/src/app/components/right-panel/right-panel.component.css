@@ -23,6 +23,21 @@
   border: 0px;
 }
 
+.btn {
+  color: white;
+  background-color: #323232;
+  border-color: #323232;
+  margin: 1%;
+  opacity: .95;
+  width: auto;
+}
+
+.btn:hover {
+  color: #323232;
+  background-color: white;
+  border-color: white;
+}
+
 .btn.reset {
   background-color: #00254c;
   color: white;
@@ -44,7 +59,7 @@
   width: 100px;
 }
 
-.btn.add {
+.btn.cancel {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
@@ -55,7 +70,7 @@
   border: 0px;
 }
 
-.btn.add:hover {
+.btn.cancel:hover {
   color: #323232;
   background-color: white;
   border-color: #323232;
@@ -101,19 +116,4 @@
   opacity: .75;
   border-radius: 30px;
   margin-left: 5px;
-}
-
-.btn {
-  color: white;
-  background-color: #323232;
-  border-color: #323232;
-  margin: 1%;
-  opacity: .95;
-  width: auto;
-}
-
-.btn:hover {
-  color: #323232;
-  background-color:white;
-  border-color: white;
 }

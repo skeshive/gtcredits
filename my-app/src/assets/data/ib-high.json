@@ -1,4 +1,4 @@
-High Level IB {
+IB-High {
   "Biology": {"scores":[4,5],"course":"BIOL 1510", "hours":4},
   "Biology+": {"scores":[6,7],"course":"BIOL 1510 & BIOL 1520", "hours":8},
   "Chemistry": {"scores":[5,6,7],"course":"CHEM 1310","hours":4},

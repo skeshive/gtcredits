@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
 import { RightPanelComponent } from './components/right-panel/right-panel.component';
-import { ScoreSelectService } from '/Users/Shreya/desktop/gtcredits/my-app/src/app/services/score-select.service';
+import { ScoreSelectService } from './services/score-select.service';
+import { AddExamService } from './services/add-exam.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ScoreSelectService } from '/Users/Shreya/desktop/gtcredits/my-app/src/a
     BrowserModule
   ],
   providers: [
-    ScoreSelectService
+    ScoreSelectService,
+    AddExamService
   ],
   bootstrap: [
     AppComponent,
