@@ -13,7 +13,7 @@ export class ScoreSelectService {
 
   public apClicked(currName: string) {
     this.currName = currName;
-    //alert(this.currName);
+    alert(this.currName);
     this.reset();
     this.apExamSelected = true;
     this._addExam.createNewExam("ADD AP NAME HERE", "AP");
