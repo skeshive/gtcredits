@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { ScoreSelectService } from '../../services/score-select.service';
-
 @Component({
   selector: 'left-panel',
   templateUrl: './left-panel.component.html',
@@ -10,6 +8,6 @@ import { ScoreSelectService } from '../../services/score-select.service';
 })
 
 export class LeftPanelComponent implements OnInit {
-  constructor(private _scoreSelect: ScoreSelectService) { }
+  constructor() { }
   ngOnInit() { }
 }
