@@ -9,5 +9,7 @@ export class AddExamService {
     let exam = new Exam();
     exam.setName(name);
     exam.setType(type);
+    console.log("name",exam.getName());
+    console.log("type",exam.getType());
   }
 }

@@ -26,7 +26,7 @@ AP {
   "Macroeconomics": {"scores":[4,5],"course":"ECON 2105","hours":3},
   "Microeconomics": {"scores":[4,5],"course":"ECON 2106","hours":3},
   "Music": {"scores":[3],"course":"MUSI 2600","hours":2},
-  "Music": {"scores":[4,5],"course":"MUSI 2600 & MUSI 3600","hours":4},
+  "Music+": {"scores":[4,5],"course":"MUSI 2600 & MUSI 3600","hours":4},
   "Physics B": {"scores":[4,5],"course":"PHYS 2XXX","hours":3},
   "Physics C1": {"scores":[5],"course":"PHYS 2211","hours":4},
   "Physics C2": {"scores":[5],"course":"PHYS 2212","hours":4},
