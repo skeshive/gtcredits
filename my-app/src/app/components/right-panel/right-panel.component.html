@@ -7,7 +7,10 @@
 
 <body>
     <div class="container" *ngIf="noSubmittedScores; else submittedScores">
-        <div class="right-header" role="group"> ADDED SCORES </div>
+        <div class="right-header" role="group"> ADDED SCORES</div>
+        <div class="alert" *ngIf="!(_scoreSelect.examSelected)" style="background-color: whitesmoke;" role="alert">
+          <i>Click on an exam to continue.</i>
+        </div>
         <div class="right-header"> ADD SELECTED SCORE </div>
 
         <div *ngIf="_scoreSelect.apExamSelected">
@@ -38,9 +41,10 @@
         <div class="container">
             <div class="right-header"> ADDED SCORES </div>
             <ul class="list-group">
-                <li class="list-group-item list-group-item-success"> AP US HISTORY <span class="badge badge-default badge-pill">5</span> </li>
-                <li class="list-group-item list-group-item-success"> AP CHEMISTRY <span class="badge badge-default badge-pill">5</span> </li>
-                <li class="list-group-item list-group-item-danger"> AP SPANISH LANGUAGE <span class="badge badge-danger badge-pill">3</span> </li>
+                <li class="toAdd list-group-item list-group-item-success"> AP US HISTORY <span class="badge badge-default badge-pill" style="float:">5 </span>
+                </li>
+                <li class="toAdd list-group-item list-group-item-success"> AP CHEMISTRY <span class="badge badge-default badge-pill">5</span> </li>
+                <li class="toAdd list-group-item list-group-item-danger"> AP SPANISH LANGUAGE <span class="badge badge-danger badge-pill">3</span> </li>
             </ul>
             <hr style="border-top: dotted 0.5px;">
 

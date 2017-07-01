@@ -1,7 +1,11 @@
+body, html {
+  overflow: hidden;
+  height:100%;
+}
+
 .container {
   background-color: #FFD700;
   text-align:center;
-  position:relative;
 }
 
 .right-header {
@@ -116,4 +120,8 @@
   opacity: .75;
   border-radius: 30px;
   margin-left: 5px;
+}
+
+.toAdd {
+    content:"x";
 }
