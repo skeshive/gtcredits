@@ -7,17 +7,8 @@
 
 <body>
     <div class="container" *ngIf="noSubmittedScores; else submittedScores">
-        <div class="right-header" role="group"> ADDED SCORES</div>
-        <ul class="list-group" *ngFor="let exam of _addExam.examArr">
-            <li class="toAdd list-group-item list-group-item-success" style="background-color:white"> {{exam.getName()}} ({{exam.getType()}})</li>
-        </ul>
 
-
-        <div class="alert" *ngIf="!(_scoreSelect.examSelected)" style="background-color: whitesmoke;" role="alert">
-          <i>Click on an exam to continue.</i>
-        </div>
         <div class="right-header"> ADD SELECTED SCORE </div>
-
         <div *ngIf="_scoreSelect.apExamSelected">
             <a href="#" class="btn">1</a>
             <a href="#" class="btn">2</a>
@@ -25,7 +16,6 @@
             <a href="#" class="btn">4</a>
             <a href="#" class="btn">5</a>
         </div>
-
         <div *ngIf="_scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected">
             <a href="#" class="btn">1</a>
             <a href="#" class="btn">2</a>
@@ -35,11 +25,21 @@
             <a href="#" class="btn">6</a>
             <a href="#" class="btn">7</a>
         </div>
-
         <div *ngIf="_scoreSelect.satExamSelected">
             <input class="form-control text-center" style="display:inline-block; width: 100px;" type="text" placeholder="0-800">
         </div>
-            <button type="button" class="btn cancel" (click)="_scoreSelect.reset()" > CANCEL </button>
+        <div *ngIf="_scoreSelect.apExamSelected || _scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected || _scoreSelect.satExamSelected ">
+          <button type="button" class="btn cancel" (click)="_scoreSelect.reset()" > CANCEL </button>
+        </div>
+
+        <div class="right-header" role="group"> ADDED SCORES</div>
+        <ul class="list-group" *ngFor="let exam of _addExam.examArr">
+            <li class="toAdd list-group-item list-group-item-success" style="background-color:white"> {{exam.getName()}} ({{exam.getType()}})</li>
+        </ul>
+
+        <div class="alert" *ngIf="!(_scoreSelect.examSelected)" style="background-color: whitesmoke;" role="alert">
+          <i>Select an Exam to Continue</i>
+        </div>
     </div>
 
     <ng-template #submittedScores>
