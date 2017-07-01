@@ -41,12 +41,18 @@ export class ScoreSelectService {
     this._addExam.createNewExam(event.srcElement.attributes.id.nodeValue, "SAT");
   }
 
+  public scoreClicked(event) {
+    console.log("triggered");
+    this._addExam.addSelectedScore(event.srcElement.attributes.id.nodeValue);
+  }
+
   public reset() {
     this.apExamSelected = false;
     this.ibHighExamSelected = false;
     this.ibStandardExamSelected = false;
     this.satExamSelected = false;
   }
+
 
   ngAfterViewInit() {
     $(':button').prop('disabled', true);
