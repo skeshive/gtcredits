@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  AfterViewInit, ElementRef,} from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ScoreSelectService } from '../../services/score-select.service';
+
+declare var $:JQueryStatic;
 
 @Component({
   selector: 'right-panel',

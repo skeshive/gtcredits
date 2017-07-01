@@ -10,6 +10,7 @@ import { LeftPanelComponent } from './components/left-panel/left-panel.component
 import { RightPanelComponent } from './components/right-panel/right-panel.component';
 import { ScoreSelectService } from './services/score-select.service';
 import { AddExamService } from './services/add-exam.service';
+import * as $ from 'jquery';
 
 @NgModule({
   declarations: [
