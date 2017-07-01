@@ -9,7 +9,7 @@
     <div class="container" *ngIf="noSubmittedScores; else submittedScores">
         <div class="right-header" role="group"> ADDED SCORES</div>
         <ul class="list-group" *ngFor="let exam of _addExam.examArr">
-            <li class="toAdd list-group-item list-group-item-success"> {{exam.getName()}} ({{exam.getType()}})</li>
+            <li class="toAdd list-group-item list-group-item-success" style="background-color:white"> {{exam.getName()}} ({{exam.getType()}})</li>
         </ul>
 
 

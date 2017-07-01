@@ -17,7 +17,7 @@ export class RightPanelComponent implements OnInit {
   constructor(
     private _scoreSelect: ScoreSelectService,
     private _addExam: AddExamService) { }
-    
+
     ngOnInit() { }
     noSubmittedScores: boolean = true;
 }
