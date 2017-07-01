@@ -25,7 +25,7 @@ body, html {
 }
 
 .btn-secondary {
-  font-family: 'Roboto Condensed';
+  font-family: 'Raleway';
 }
 
 .btn-secondary:focus {
@@ -33,7 +33,7 @@ body, html {
 }
 
 .btn-outline-secondary {
-  font-family: "Roboto Condensed";
+  font-family: "Raleway";
 }
 
 .btn-primary {

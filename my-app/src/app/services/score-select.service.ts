@@ -42,7 +42,6 @@ export class ScoreSelectService {
   }
 
   public reset() {
-    this.examSelected = false;
     this.apExamSelected = false;
     this.ibHighExamSelected = false;
     this.ibStandardExamSelected = false;
