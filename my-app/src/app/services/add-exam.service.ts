@@ -4,12 +4,12 @@ import { Exam } from 'app/exam';
 
 @Injectable()
 export class AddExamService {
+  examArr: Exam[] =[];
 
   createNewExam(name:string, type:string) {
     let exam = new Exam();
     exam.setName(name);
     exam.setType(type);
-    console.log("name",exam.getName());
-    console.log("type",exam.getType());
+    this.examArr.push(exam);
   }
 }
