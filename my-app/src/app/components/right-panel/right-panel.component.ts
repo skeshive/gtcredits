@@ -17,10 +17,16 @@ export class RightPanelComponent implements OnInit {
   constructor(
     private _scoreSelect: ScoreSelectService,
     private _addExam: AddExamService) { }
-
     ngOnInit() { }
 
     noSubmittedScores: boolean = true;
+
+    test() {
+        $('.list-group-item').attr('id', function(i) {
+            console.log(i+1);
+            return (i+1);
+        });
+    }
 
     public toggleSubmittedScores() {
       this.noSubmittedScores = false;
