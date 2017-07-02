@@ -7,12 +7,14 @@
 
 <body>
     <div class="container" *ngIf="noSubmittedScores; else submittedScores">
+        <!--merge conflict
         <div class="right-header" role="group"> ADDED SCORES</div>
         <ul class="list-group" *ngFor="let exam of _addExam.examArr">
             <li class="toAdd list-group-item justify-content-between"> {{exam.getName()}} ({{exam.getType()}})
                 <button type="button" class="close" aria-label="Close" (click)="close()"><span aria-hidden="true">&times;</span> </button>
             </li>
         </ul>
+    -->
 
 
         <div class="alert" *ngIf="!(_scoreSelect.examSelected)" style="background-color: whitesmoke;" role="alert">
