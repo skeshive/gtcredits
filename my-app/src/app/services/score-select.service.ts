@@ -11,6 +11,7 @@ export class ScoreSelectService {
   ibHighExamSelected: boolean = false;
   ibStandardExamSelected: boolean = false;
   satExamSelected: boolean = false;
+
   constructor(private _addExam: AddExamService) { }
 
   public apClicked(event) {
@@ -42,7 +43,6 @@ export class ScoreSelectService {
   }
 
   public scoreClicked(event) {
-    console.log("triggered");
     this._addExam.addSelectedScore(event.srcElement.attributes.id.nodeValue);
     this.reset();
   }
@@ -53,7 +53,6 @@ export class ScoreSelectService {
     this.ibStandardExamSelected = false;
     this.satExamSelected = false;
   }
-
 
   ngAfterViewInit() {
     $(':button').prop('disabled', true);

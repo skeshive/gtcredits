@@ -47,6 +47,9 @@
         <div class="alert" *ngIf="!(_scoreSelect.examSelected)" style="background-color: whitesmoke;" role="alert">
           <i>Select an Exam to Continue</i>
         </div>
+        <div *ngIf="!_addExam.examArrEmpty">
+        <button type="button" class="btn cancel" (click)="toggleSubmittedScores()"> SUBMIT </button>
+      </div>
     </div>
 
     <ng-template #submittedScores>

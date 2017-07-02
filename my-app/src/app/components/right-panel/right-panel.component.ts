@@ -19,7 +19,13 @@ export class RightPanelComponent implements OnInit {
     private _addExam: AddExamService) { }
 
     ngOnInit() { }
+
     noSubmittedScores: boolean = true;
+
+    public toggleSubmittedScores() {
+      this.noSubmittedScores = false;
+    }
+
     close() {
         $('.close').closest('ul').fadeOut( "slow" );
 }
