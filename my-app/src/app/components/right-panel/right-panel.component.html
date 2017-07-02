@@ -25,9 +25,10 @@
           <button class="btn" id=6 (click)="_scoreSelect.scoreClicked($event)">6</button>
           <button class="btn" id=7 (click)="_scoreSelect.scoreClicked($event)">7</button>
         </div>
+
         <div *ngIf="_scoreSelect.satExamSelected">
             <div class="input-group">
-              <input class="form-control text-center" style="display:inline-block; width: 100px;" type="text" placeholder="0-800" #satInput>
+              <input class="form-control text-center" type="text" placeholder="0-800" #satInput>
               <span class="input-group-btn">
                 <button type="button" class="btn submit" (click)="_addExam.addSelectedScore(satInput.value)"> SUBMIT </button>
               </span>
