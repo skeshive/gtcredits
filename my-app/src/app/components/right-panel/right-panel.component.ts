@@ -1,9 +1,8 @@
-import { Component, OnInit,  AfterViewInit, ElementRef,} from '@angular/core';
+import { Component, OnInit,  AfterViewInit, ElementRef, Inject} from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ScoreSelectService } from '../../services/score-select.service';
 import { AddExamService } from '../../services/add-exam.service';
-
 
 declare var $:JQueryStatic;
 
@@ -13,6 +12,7 @@ declare var $:JQueryStatic;
   styleUrls: ['./right-panel.component.css']
 })
 
+
 export class RightPanelComponent implements OnInit {
   constructor(
     private _scoreSelect: ScoreSelectService,
@@ -20,4 +20,7 @@ export class RightPanelComponent implements OnInit {
 
     ngOnInit() { }
     noSubmittedScores: boolean = true;
+    close() {
+        $('.close').closest('ul').fadeOut( "slow" );
+}
 }
