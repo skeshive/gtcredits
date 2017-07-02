@@ -17,10 +17,12 @@ export class RightPanelComponent implements OnInit {
   constructor(
     private _scoreSelect: ScoreSelectService,
     private _addExam: AddExamService) { }
-
     ngOnInit() { }
     noSubmittedScores: boolean = true;
-    close() {
-        $('.close').closest('ul').fadeOut( "slow" );
-}
+    test() {
+        $('.list-group-item').attr('id', function(i) {
+            console.log(i+1);
+            return (i+1);
+        });
+    }
 }

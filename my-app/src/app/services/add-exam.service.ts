@@ -14,8 +14,17 @@ export class AddExamService {
   }
 
   public addSelectedScore(score: number) {
-    this.exam.setScore(score);
+    if(score >= 0 && score <= 800) {
+        this.exam.setScore(score);
+    } else {
+        alert("enter a valid score smh");
+    }
     this.checkDuplicates(this.exam);
+  }
+
+  public removeSelectedScore() {
+    this.examArr.pop();
+    //this.examArr.splice( *pass list item id*, 1 );
   }
 
   public checkDuplicates(exam: Exam) {
