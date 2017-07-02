@@ -6,12 +6,16 @@ import { Exam } from 'app/exam';
 export class AddExamService {
   examArr: Exam[] =[];
   duplicateExists: boolean = false;
+  exam = new Exam();
 
   public createNewExam(name:string, type:string) {
-    let exam = new Exam();
-    exam.setName(name);
-    exam.setType(type);
-    this.checkDuplicates(exam);
+    this.exam.setName(name);
+    this.exam.setType(type);
+  }
+
+  public addSelectedScore(score: number) {
+    this.exam.setScore(score);
+    this.checkDuplicates(this.exam);
   }
 
   public checkDuplicates(exam: Exam) {
@@ -22,6 +26,7 @@ export class AddExamService {
     }
       if (!this.duplicateExists) {
         this.examArr.push(exam);
+        this.exam = new Exam();
       } else {
         alert("YIKES! This exam was already added.");
         this.duplicateExists = false;
