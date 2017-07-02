@@ -4,9 +4,10 @@ import { Exam } from 'app/exam';
 
 @Injectable()
 export class AddExamService {
+  exam = new Exam();
   examArr: Exam[] =[];
   duplicateExists: boolean = false;
-  exam = new Exam();
+  examArrEmpty: boolean = true;
 
   public createNewExam(name:string, type:string) {
     this.exam.setName(name);
@@ -33,12 +34,13 @@ export class AddExamService {
         this.duplicateExists = true;
       }
     }
-      if (!this.duplicateExists) {
-        this.examArr.push(exam);
-        this.exam = new Exam();
-      } else {
-        alert("YIKES! This exam was already added.");
-        this.duplicateExists = false;
-      }
+    if (!this.duplicateExists) {
+      this.examArr.push(exam);
+      this.exam = new Exam();
+      this.examArrEmpty = false;
+    } else {
+      alert("YIKES! This exam was already added.");
+      this.duplicateExists = false;
+    }
   }
 }

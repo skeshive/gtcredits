@@ -25,9 +25,10 @@
           <button class="btn" id=6 (click)="_scoreSelect.scoreClicked($event)">6</button>
           <button class="btn" id=7 (click)="_scoreSelect.scoreClicked($event)">7</button>
         </div>
+
         <div *ngIf="_scoreSelect.satExamSelected">
             <div class="input-group">
-              <input class="form-control text-center" style="display:inline-block; width: 100px;" type="text" placeholder="0-800" #satInput>
+              <input class="form-control text-center" type="text" placeholder="0-800" #satInput>
               <span class="input-group-btn">
                 <button type="button" class="btn submit" (click)="_addExam.addSelectedScore(satInput.value)"> SUBMIT </button>
               </span>
@@ -47,6 +48,9 @@
         <div class="alert" *ngIf="!(_scoreSelect.examSelected)" style="background-color: whitesmoke;" role="alert">
           <i>Select an exam to Continue</i>
         </div>
+        <div *ngIf="!_addExam.examArrEmpty">
+        <button type="button" class="btn cancel" (click)="toggleSubmittedScores()"> SUBMIT </button>
+      </div>
     </div>
 
     <ng-template #submittedScores>
