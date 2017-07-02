@@ -44,6 +44,7 @@ export class ScoreSelectService {
   public scoreClicked(event) {
     console.log("triggered");
     this._addExam.addSelectedScore(event.srcElement.attributes.id.nodeValue);
+    this.reset();
   }
 
   public reset() {
