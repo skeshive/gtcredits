@@ -49,7 +49,7 @@
             </li>
         </ul>
 
-        <div class="alert" *ngIf="!(_scoreSelect.examSelected)" style="background-color: whitesmoke;" role="alert">
+        <div class="alert" *ngIf="_addExam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
           <i>Select an exam to Continue</i>
         </div>
         <div *ngIf="!_addExam.examArrEmpty">
@@ -89,7 +89,7 @@
             <div class="label"> SOPHOMORE </div>
             <hr style="border-top: dotted 0.5px;">
 
-            <button class="btn reset"> RESET </button>
+            <button class="btn reset" (click)="reset()"> RESET </button>
             <hr style="border-top: dotted 0.5px;">
         </div>
     </ng-template>

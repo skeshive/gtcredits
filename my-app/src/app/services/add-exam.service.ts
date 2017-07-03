@@ -8,6 +8,7 @@ export class AddExamService {
   examArr: Exam[] =[];
   duplicateExists: boolean = false;
   examArrEmpty: boolean = true;
+  isInvalid: boolean = false;
 
   public createNewExam(name:string, type:string) {
     this.exam.setName(name);
@@ -19,13 +20,23 @@ export class AddExamService {
         this.exam.setScore(score);
     } else {
         alert("enter a valid score smh");
+        this.isInvalid = true;
     }
     this.checkDuplicates(this.exam);
   }
 
-  public removeSelectedScore() {
+  public removeSelectedScore(exam:Exam) {
+    //console.log(this.examArr.indexOf(this.exam)); returns -1
     this.examArr.pop();
-    //this.examArr.splice( *pass list item id*, 1 );
+    if(this.examArr.indexOf(this.exam) == 0) {
+        this.examArrEmpty = true;
+    }
+    //this.examArr.splice( *pass list item id*, 1);
+  }
+
+  public removeAll() {
+    this.examArr.splice(0, this.examArr.length);
+    this.examArrEmpty = true;
   }
 
   public checkDuplicates(exam: Exam) {
@@ -35,12 +46,14 @@ export class AddExamService {
       }
     }
     if (!this.duplicateExists) {
-      this.examArr.push(exam);
-      this.exam = new Exam();
-      this.examArrEmpty = false;
+        if(!this.isInvalid) {
+            this.examArr.push(exam);
+            this.exam = new Exam();
+            this.examArrEmpty = false;
+        }
     } else {
-      alert("YIKES! This exam was already added.");
-      this.duplicateExists = false;
+        alert("YIKES! This exam was already added.");
+        this.duplicateExists = false;
     }
   }
 }

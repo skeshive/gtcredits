@@ -21,7 +21,7 @@ export class RightPanelComponent implements OnInit {
 
     noSubmittedScores: boolean = true;
 
-    test() {
+    public test() {
         $('.list-group-item').attr('id', function(i) {
             console.log(i+1);
             return (i+1);
@@ -32,7 +32,12 @@ export class RightPanelComponent implements OnInit {
       this.noSubmittedScores = false;
     }
 
-    close() {
+    reset() {
+        this.noSubmittedScores = true;
+        this._addExam.removeAll();
+    }
+
+    public close() {
         $('.close').closest('ul').fadeOut( "slow" );
-}
+    }
 }
