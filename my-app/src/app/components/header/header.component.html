@@ -13,7 +13,7 @@
                         <a class="dropdown-item"
                         href="#" onclick="window.open('https://github.com/skeshive/gtcredits.git');window.open('https://github.com/nikitarajput/gtcredits');" ><i class="fa fa-github" aria-hidden="true"></i> Github</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#disclaimer">Disclaimer</a>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#disclaimer" (click)="loadDisclaimer()">Disclaimer</a>
                     </div>
                     <!-- Disclaimer Modal -->
                     <div class="modal fade" id="disclaimer" tabindex="-1" role="dialog" aria-labelledby="dislcaimer" aria-hidden="true">
@@ -26,7 +26,6 @@
                                 </button>
                              </div>
                             <div class="modal-body">
-                                <div ng-include="'disclaimer.txt'"></div>
                             </div>
                             <div class="modal-footer justify-content-between"> Copyright © 2017 GT Credits.
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
