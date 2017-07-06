@@ -28,16 +28,8 @@ body, html {
   font-family: 'Raleway';
 }
 
-.btn-secondary:focus {
+.btn-secondary.active{
   background-color: #FFD700;
-}
-
-.btn-outline-secondary {
-  font-family: "Raleway";
-}
-
-.btn-primary {
-  font-family: "Raleway";
 }
 
 #wrapper {

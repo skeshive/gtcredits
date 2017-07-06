@@ -3,7 +3,7 @@
 <body>
     <div class="card">
         <h3 class="card-header">AP</h3>
-        <div class="card-block">
+        <div class="card-block" (click)="resetClick()">
             <div class="btn-group" id="wrapper" role="group">
                 <button type="button" class="btn btn-secondary" id="Art" (click)="_scoreSelect.apClicked($event)">Art History</button>
                 <button type="button" class="btn btn-secondary" id="Biology" (click)="_scoreSelect.apClicked($event)">Biology</button>
