@@ -9,10 +9,12 @@ export class AddExamService {
   duplicateExists: boolean = false;
   examArrEmpty: boolean = true;
   isInvalid: boolean = false;
+  count = 0;
 
   public createNewExam(name:string, type:string) {
     this.exam.setName(name);
     this.exam.setType(type);
+    this.exam.setIndex(this.count);
   }
 
   public addSelectedScore(score: number) {
@@ -25,13 +27,11 @@ export class AddExamService {
     this.checkDuplicates(this.exam);
   }
 
-  public removeSelectedScore(exam:Exam) {
-    //console.log(this.examArr.indexOf(this.exam)); returns -1
-    this.examArr.pop();
+  public removeSelectedScore(index: number) {
+    this.examArr.splice(index, 1);
     if(this.examArr.indexOf(this.exam) == 0) {
         this.examArrEmpty = true;
     }
-    //this.examArr.splice( *pass list item id*, 1);
   }
 
   public removeAll() {
@@ -49,6 +49,7 @@ export class AddExamService {
         if(!this.isInvalid) {
             this.examArr.push(exam);
             this.exam = new Exam();
+            this.count++;
             this.examArrEmpty = false;
         }
     } else {

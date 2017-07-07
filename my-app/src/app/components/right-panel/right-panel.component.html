@@ -43,7 +43,7 @@
             <li class="toAdd list-group-item justify-content-between" (click) ="test()">
               {{exam.getType()}} {{exam.getName()}}
               <span class="badge badge-default badge-pill" style="float:"> {{exam.getScore()}} </span>
-              <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore()">
+              <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore(exam.getIndex())">
                 <span aria-hidden="true">&times;</span>
               </button>
             </li>

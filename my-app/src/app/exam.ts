@@ -4,6 +4,7 @@ export class Exam {
   private name: string;
   private score: number;
   private type: string;
+  private index: number;
 
   constructor() { }
 
@@ -19,6 +20,10 @@ export class Exam {
     return this.type;
   }
 
+  public getIndex(): number {
+    return this.index;
+  }
+
   public setName(name: string) {
     this.name = name;
   }
@@ -29,5 +34,9 @@ export class Exam {
 
   public setType(type: string) {
     this.type = type;
+  }
+
+  public setIndex(index: number) {
+    this.index = index;
   }
 }

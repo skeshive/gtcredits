@@ -21,13 +21,6 @@ export class RightPanelComponent implements OnInit {
 
     noSubmittedScores: boolean = true;
 
-    public test() {
-        $('.list-group-item').attr('id', function(i) {
-            console.log(i+1);
-            return (i+1);
-        });
-    }
-
     public toggleSubmittedScores() {
       this.noSubmittedScores = false;
     }
