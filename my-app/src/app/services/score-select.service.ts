@@ -54,8 +54,4 @@ export class ScoreSelectService {
     this.satExamSelected = false;
   }
 
-  ngAfterViewInit() {
-    $(':button').prop('disabled', true);
-  } //does not work
-
 }

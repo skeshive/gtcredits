@@ -29,8 +29,4 @@ export class RightPanelComponent implements OnInit {
         this.noSubmittedScores = true;
         this._addExam.removeAll();
     }
-
-    public close() {
-        $('.close').closest('ul').fadeOut( "slow" );
-    }
 }
