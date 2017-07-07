@@ -119,9 +119,8 @@ body, html {
   background-color: black;
   opacity: .75;
   border-radius: 30px;
-  margin-left: 5px;
 }
 
-.toAdd {
+.to-add {
     content:"x";
 }

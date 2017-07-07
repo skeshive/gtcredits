@@ -26,7 +26,7 @@ export class RightPanelComponent implements OnInit {
     }
 
     reset() {
-        this.noSubmittedScores = true;
-        this._addExam.removeAll();
+      this.noSubmittedScores = true;
+      this._addExam.removeAll();
     }
 }

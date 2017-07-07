@@ -10,10 +10,4 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 export class LeftPanelComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
-
-  /*public resetClick() {
-    $(".btn-group > .btn").click(function(){
-    $(this).addClass("active").siblings().removeClass("active");
-});
-}*/
 }

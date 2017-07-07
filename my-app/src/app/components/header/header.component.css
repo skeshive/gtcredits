@@ -6,10 +6,10 @@
 }
 
 .navbar-brand {
-    font-size: 28px;
-    line-height: 55px;
-    font-family: 'Raleway';
-    color: black;
+  font-size: 28px;
+  line-height: 55px;
+  font-family: 'Raleway';
+  color: white !important;
 }
 
 .header-icons {
@@ -17,11 +17,15 @@
 }
 
 .btn {
-    background-color: #323232;
-    color: white;
+  background-color: #323232;
+  color: white;
 }
 
 .modal-footer {
-    color: #323232;
-    font-size: 15px;
+  color: #323232;
+  font-size: 15px;
+}
+
+.modal-title {
+  color: black;
 }

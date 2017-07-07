@@ -17,32 +17,33 @@
             <button class="btn" id=5 (click)="_scoreSelect.scoreClicked($event)">5</button>
         </div>
         <div *ngIf="_scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected">
-          <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
-          <button class="btn" id=2 (click)="_scoreSelect.scoreClicked($event)">2</button>
-          <button class="btn" id=3 (click)="_scoreSelect.scoreClicked($event)">3</button>
-          <button class="btn" id=4 (click)="_scoreSelect.scoreClicked($event)">4</button><br>
-          <button class="btn" id=5 (click)="_scoreSelect.scoreClicked($event)">5</button>
-          <button class="btn" id=6 (click)="_scoreSelect.scoreClicked($event)">6</button>
-          <button class="btn" id=7 (click)="_scoreSelect.scoreClicked($event)">7</button>
+            <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
+            <button class="btn" id=2 (click)="_scoreSelect.scoreClicked($event)">2</button>
+            <button class="btn" id=3 (click)="_scoreSelect.scoreClicked($event)">3</button>
+            <button class="btn" id=4 (click)="_scoreSelect.scoreClicked($event)">4</button><br>
+            <button class="btn" id=5 (click)="_scoreSelect.scoreClicked($event)">5</button>
+            <button class="btn" id=6 (click)="_scoreSelect.scoreClicked($event)">6</button>
+            <button class="btn" id=7 (click)="_scoreSelect.scoreClicked($event)">7</button>
         </div>
 
         <div *ngIf="_scoreSelect.satExamSelected">
             <div class="input-group">
-              <input class="form-control text-center" type="text" placeholder="0-800" #satInput>
-              <span class="input-group-btn">
-                <button type="button" class="btn submit" (click)="_addExam.addSelectedScore(satInput.value)"> SUBMIT </button>
-              </span>
-          </div>
+                <input class="form-control text-center" type="text" placeholder="0-800" #satInput>
+                <span class="input-group-btn">
+                    <button type="button" class="btn submit" (click)="_addExam.addSelectedScore(satInput.value)"> SUBMIT </button>
+                </span>
+           </div>
         </div>
+
         <div *ngIf="_scoreSelect.apExamSelected || _scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected || _scoreSelect.satExamSelected ">
-          <button type="button" class="btn cancel" (click)="_scoreSelect.reset()" > CANCEL </button>
+            <button type="button" class="btn cancel" (click)="_scoreSelect.reset()" > CANCEL </button>
         </div>
 
         <div class="right-header" role="group"> ADDED SCORES</div>
         <ul class="list-group" *ngFor="let exam of _addExam.examArr">
-            <li class="toAdd list-group-item justify-content-between" (click) ="test()">
+            <li class="to-add list-group-item justify-content-between">
               {{exam.getType()}} {{exam.getName()}}
-              <span class="badge badge-default badge-pill" style="float:"> {{exam.getScore()}} </span>
+              <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
               <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore(exam.getIndex())">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -50,7 +51,7 @@
         </ul>
 
         <div class="alert" *ngIf="_addExam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
-          <i>Select an exam to Continue</i>
+          <i>Select an Exam to Continue</i>
         </div>
         <div *ngIf="!_addExam.examArrEmpty">
         <button type="button" class="btn cancel" (click)="toggleSubmittedScores()"> SUBMIT </button>
@@ -61,8 +62,7 @@
         <div class="container">
             <div class="right-header"> ADDED SCORES </div>
             <ul class="list-group">
-                <li class="toAdd list-group-item list-group-item-success"> AP US HISTORY
-                </li>
+                <li class="toAdd list-group-item list-group-item-success"> AP US HISTORY </li>
                 <li class="toAdd list-group-item list-group-item-success"> AP CHEMISTRY <span class="badge badge-default badge-pill">5</span> </li>
                 <li class="toAdd list-group-item list-group-item-danger"> AP SPANISH LANGUAGE <span class="badge badge-danger badge-pill">3</span> </li>
             </ul>

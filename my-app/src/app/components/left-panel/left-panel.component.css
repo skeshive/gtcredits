@@ -3,17 +3,8 @@ body, html {
   height:100%;
 }
 
-#scrollable {
-    position: absolute;
-    top: 0px;
-    bottom: 0;
-    left: 0;
-    width: 75%;
-    overflow-y: scroll;
-}
-
 .card {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .card-header {
@@ -28,11 +19,20 @@ body, html {
   font-family: 'Raleway';
 }
 
-.btn-secondary.active{
+.btn-secondary:focus {
   background-color: #FFD700;
 }
 
 #wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+#scrollable {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  overflow-y: scroll;
 }
