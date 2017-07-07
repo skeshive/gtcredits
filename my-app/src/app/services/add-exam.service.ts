@@ -29,17 +29,22 @@ export class AddExamService {
 
   public removeSelectedScore(index: number) {
     this.examArr.splice(index, 1);
+    this.count--;
+
+    if(this.examArr.length == 0) {
+        this.examArrEmpty = true;
+        this.count = 0;
+    }
+
     for (var i = index; i < this.examArr.length; i++) {
       this.examArr[i].setIndex(this.examArr[i].getIndex() - 1);
-    }
-    if(this.examArr.indexOf(this.exam) == 0) {
-        this.examArrEmpty = true;
     }
   }
 
   public removeAll() {
     this.examArr.splice(0, this.examArr.length);
     this.examArrEmpty = true;
+    this.count = 0;
   }
 
   public checkDuplicates(exam: Exam) {
