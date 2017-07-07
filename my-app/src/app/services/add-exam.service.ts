@@ -29,6 +29,9 @@ export class AddExamService {
 
   public removeSelectedScore(index: number) {
     this.examArr.splice(index, 1);
+    for (var i = index; i < this.examArr.length; i++) {
+      this.examArr[i].setIndex(this.examArr[i].getIndex() - 1);
+    }
     if(this.examArr.indexOf(this.exam) == 0) {
         this.examArrEmpty = true;
     }
