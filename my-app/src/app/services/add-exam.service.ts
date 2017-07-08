@@ -2,6 +2,10 @@ import { Injectable } from '@angular/core';
 
 import { Exam } from 'app/exam';
 
+import { RightPanelComponent } from 'app/components/right-panel/right-panel.component';
+
+import { ScoreSelectService } from './score-select.service';
+
 @Injectable()
 export class AddExamService {
   exam = new Exam();
@@ -10,6 +14,7 @@ export class AddExamService {
   examArrEmpty: boolean = true;
   isInvalid: boolean = false;
   count = 0;
+  _scoreSelect: ScoreSelectService;
 
   public createNewExam(name:string, type:string) {
     this.exam.setName(name);
@@ -20,8 +25,12 @@ export class AddExamService {
   public addSelectedScore(score: number) {
     if(score >= 0 && score <= 800) {
         this.exam.setScore(score);
+        console.log(score);
+        //console.log("clearing it up");
+        //this._scoreSelect.reset();
     } else {
         alert("enter a valid score smh");
+        console.log("failed");
         this.isInvalid = true;
     }
     this.checkDuplicates(this.exam);
