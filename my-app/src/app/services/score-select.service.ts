@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 
 import { AddExamService } from './add-exam.service';
 
-declare var $:JQueryStatic;
-
 @Injectable()
 export class ScoreSelectService {
   examSelected: boolean = false;

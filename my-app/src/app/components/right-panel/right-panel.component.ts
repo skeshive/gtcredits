@@ -25,6 +25,15 @@ export class RightPanelComponent implements OnInit {
       this.noSubmittedScores = false;
     }
 
+    public checkValidity(score) {
+        if(score >= 0 && score <= 800) {
+            this._addExam.addSelectedScore(score);
+        } else {
+            $(".form-control").val('');
+            alert("enter a valid score smh");
+        }
+    }
+
     reset() {
       this.noSubmittedScores = true;
       this._addExam.removeAll();
