@@ -20,7 +20,7 @@ export class RightPanelComponent implements OnInit {
 
     displayResults: boolean = false;
 
-    public toggleSubmittedScores() {
+    public toggleDisplayResults() {
       this.displayResults = true;
     }
 
@@ -28,11 +28,11 @@ export class RightPanelComponent implements OnInit {
         if(score >= 0 && score <= 800) {
             this._addExam.addSelectedScore(score);
         } else {
-            alert("enter a valid score smh");
+            alert("SMH! Enter a valid score");
         }
     }
 
-    reset() {
+    public reset() {
       this.displayResults= false;
       this._addExam.removeAll();
     }

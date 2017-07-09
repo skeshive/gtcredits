@@ -2,7 +2,6 @@
 <html>
 <body>
     <div class="container" *ngIf="!displayResults; else results">
-
         <div class="right-header"> ADD SELECTED SCORE </div>
         <div *ngIf="_scoreSelect.apExamSelected">
             <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
@@ -36,27 +35,26 @@
 
         <div class="right-header" role="group"> ADDED SCORES</div>
         <ul class="list-group" *ngFor="let exam of _addExam.examArr">
-            <li class="to-add list-group-item justify-content-between">
-              {{exam.getType()}} {{exam.getName()}}
-              <span class="pull-right">
-                <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
-                <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore(exam.getIndex())">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-            </span>
+            <li class="to-add list-group-item justify-content-between"> {{exam.getType()}} {{exam.getName()}}
+                <span class="pull-right">
+                    <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
+                    <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore(exam.getIndex())">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </span>
             </li>
         </ul>
 
         <div class="alert" *ngIf="_addExam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
-          <i>Select an Exam to Continue</i>
+            <i>Select an Exam to Continue</i>
         </div>
         <div *ngIf="!_addExam.examArrEmpty">
-        <button type="button" class="btn cancel" (click)="toggleSubmittedScores()"> SUBMIT </button>
-      </div>
+            <button type="button" class="btn cancel" (click)="toggleDisplayResults()"> SUBMIT </button>
+       </div>
     </div>
 
     <ng-template #results>
-      <results></results>
+        <results></results>
     </ng-template>
 
 </body>
