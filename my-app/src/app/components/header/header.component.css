@@ -21,16 +21,29 @@
   color: white;
 }
 
+.modal-title {
+  color: black;
+}
+
+.modal-body {
+  width: 100%;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
 .modal-footer {
   color: #323232;
   font-size: 15px;
 }
 
-.modal-title {
+form {
   color: black;
+  font-size: 18px;
 }
 
-form {
-    color: black;
-    font-size: 18px;
+label {
+  margin: 0;
 }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-declare var $:JQueryStatic;
 
 @Component({
   selector: 'header',
@@ -8,12 +7,6 @@ declare var $:JQueryStatic;
   styleUrls: ['header.component.css']
 })
 
-export class HeaderComponent {
-    loadDisclaimer() {
-        $(".modal-body").load("disclaimer.txt", function(){
-            alert("Done Loading");
-        });
-    }
-}
+export class HeaderComponent { }
 
 export class NgbdDropdownBasic { }

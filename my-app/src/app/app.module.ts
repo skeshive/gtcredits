@@ -13,7 +13,6 @@ import { SATComponent } from './components/sat/sat.component';
 
 import { ScoreSelectService } from './services/score-select.service';
 import { AddExamService } from './services/add-exam.service';
-import * as $ from 'jquery';
 
 @NgModule({
   declarations: [
