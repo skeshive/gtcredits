@@ -38,10 +38,12 @@
         <ul class="list-group" *ngFor="let exam of _addExam.examArr">
             <li class="to-add list-group-item justify-content-between">
               {{exam.getType()}} {{exam.getName()}}
-              <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
-              <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore(exam.getIndex())">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <span class="pull-right">
+                <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
+                <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore(exam.getIndex())">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </span>
             </li>
         </ul>
 
