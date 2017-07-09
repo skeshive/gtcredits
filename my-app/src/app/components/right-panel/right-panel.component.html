@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
 <body>
     <div class="container" *ngIf="!displayResults; else results">
 
@@ -59,39 +54,7 @@
     </div>
 
     <ng-template #results>
-        <div class="container">
-            <div class="right-header"> ADDED SCORES </div>
-            <ul class="list-group">
-                <li class="toAdd list-group-item list-group-item-success"> AP US HISTORY </li>
-                <li class="toAdd list-group-item list-group-item-success"> AP CHEMISTRY <span class="badge badge-default badge-pill">5</span> </li>
-                <li class="toAdd list-group-item list-group-item-danger"> AP SPANISH LANGUAGE <span class="badge badge-danger badge-pill">3</span> </li>
-            </ul>
-            <hr style="border-top: dotted 0.5px;">
-
-            <div class="right-header"> TRANSLATED COURSES </div>
-            <ul class="list-group">
-                <li class="list-group-item justify-content-between"> HIST 2111 <span class="badge badge-default badge-pill">3 hrs</span> </li>
-                <li class="list-group-item justify-content-between"> CHEM 1212K <span class="badge badge-default badge-pill ">4 hrs</span> </li>
-            </ul>
-            <hr style="border-top: dotted 0.5px;">
-
-            <div class="right-header"> ADDITIONAL FULFILMENTS </div>
-            <div class="label"> CORE AREA A </div>
-            <div class="label"> CORE AREA B </div>
-            <div class="label"> CORE AREA C </div>
-            <hr style="border-top: dotted 0.5px;">
-
-            <div class="right-header"> CREDITS </div>
-            <div class="credits"> 100 </div>
-            <hr style="border-top: dotted 0.5px;">
-
-            <div class="right-header"> CLASS STANDING </div>
-            <div class="label"> SOPHOMORE </div>
-            <hr style="border-top: dotted 0.5px;">
-
-            <button class="btn reset" (click)="reset()"> RESET </button>
-            <hr style="border-top: dotted 0.5px;">
-        </div>
+      <results></results>
     </ng-template>
 
 </body>

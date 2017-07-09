@@ -15,16 +15,6 @@ body, html {
   padding-top: 1%;
 }
 
-.submit {
-  background-color: #00254c;
-  color: white;
-  font-family: 'Raleway';
-  font-size: 12px;
-  width: 10px;
-  height: 30px;
-  border: 0px;
-}
-
 .btn {
   color: white;
   background-color: #323232;
@@ -40,18 +30,19 @@ body, html {
   border-color: white;
 }
 
-.btn.cancel {
+.btn.reset {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
   font-size: 16px;
-  margin-top: 5%;
-  width: 120px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 300px;
   height: 35px;
   border: 0px;
 }
 
-.btn.cancel:hover {
+.btn.reset:hover {
   color: #323232;
   background-color: white;
   border-color: #323232;
@@ -60,12 +51,28 @@ body, html {
   width: 100px;
 }
 
+.label {
+  background-color: white;
+  color: #323232;
+  font-family: 'Raleway';
+  font-size: 16px;
+  border-radius: 25px;
+  display: inline-block;
+  line-height: 42px;
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+}
+
+.credits {
+  color: #323232;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+
 .badge {
   background-color: black;
   opacity: .75;
   border-radius: 30px;
-}
-
-.to-add {
-    content:"x";
 }
