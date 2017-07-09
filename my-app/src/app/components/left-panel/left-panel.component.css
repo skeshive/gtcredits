@@ -23,9 +23,11 @@ body, html {
   background-color: #FFD700;
 }
 
-#wrapper {
-  display: flex;
-  justify-content: center;
+.button-group {
+  width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 0;
 }
 
 #scrollable {
