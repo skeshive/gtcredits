@@ -40,6 +40,11 @@ export class ScoreSelectService {
     this.reset();
   }
 
+public satScoreClicked(score: number) {
+    this._addExam.addSelectedScore(score);
+    this.reset();
+  }
+
   public reset() {
     this.apExamSelected = false;
     this.ibHighExamSelected = false;

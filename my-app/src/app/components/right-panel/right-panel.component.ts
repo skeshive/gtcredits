@@ -24,14 +24,6 @@ export class RightPanelComponent implements OnInit {
       this.displayResults = true;
     }
 
-    public checkValidity(score) {
-        if(score >= 0 && score <= 800) {
-            this._addExam.addSelectedScore(score);
-        } else {
-            alert("SMH! Enter a valid score");
-        }
-    }
-
     public reset() {
       this.displayResults= false;
       this._addExam.removeAll();
