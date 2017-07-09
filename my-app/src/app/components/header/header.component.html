@@ -20,12 +20,24 @@
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Report Issue/Feedback</h5>
+                                <h4 class="modal-title">Report Issue/Feedback</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                              </div>
-                            <div class="modal-body"></div>
+                            <div class="modal-body">
+                                <form>
+                                  <div class="form-group required">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required">
+                                    <label>Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required">
+                                    <label>Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required="required"></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
                             <div class="modal-footer justify-content-between"> Copyright © 2017 GT Credits.
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>

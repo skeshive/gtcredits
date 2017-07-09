@@ -29,3 +29,8 @@
 .modal-title {
   color: black;
 }
+
+form {
+    color: black;
+    font-size: 18px;
+}
