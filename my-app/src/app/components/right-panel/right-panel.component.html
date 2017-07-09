@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <div class="container" *ngIf="noSubmittedScores; else submittedScores">
+    <div class="container" *ngIf="!displayResults; else results">
 
         <div class="right-header"> ADD SELECTED SCORE </div>
         <div *ngIf="_scoreSelect.apExamSelected">
@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <ng-template #submittedScores>
+    <ng-template #results>
         <div class="container">
             <div class="right-header"> ADDED SCORES </div>
             <ul class="list-group">

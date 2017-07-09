@@ -4,8 +4,6 @@ import { Exam } from 'app/exam';
 
 import { RightPanelComponent } from 'app/components/right-panel/right-panel.component';
 
-import { ScoreSelectService } from './score-select.service';
-
 @Injectable()
 export class AddExamService {
   exam = new Exam();
@@ -14,7 +12,6 @@ export class AddExamService {
   examArrEmpty: boolean = true;
   isInvalid: boolean = false;
   count = 0;
-  _scoreSelect: ScoreSelectService;
 
   public createNewExam(name:string, type:string) {
     this.exam.setName(name);

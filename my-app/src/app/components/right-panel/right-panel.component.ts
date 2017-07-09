@@ -18,10 +18,10 @@ export class RightPanelComponent implements OnInit {
     private _addExam: AddExamService) { }
     ngOnInit() { }
 
-    noSubmittedScores: boolean = true;
+    displayResults: boolean = false;
 
     public toggleSubmittedScores() {
-      this.noSubmittedScores = false;
+      this.displayResults = true;
     }
 
     public checkValidity(score) {
@@ -33,7 +33,7 @@ export class RightPanelComponent implements OnInit {
     }
 
     reset() {
-      this.noSubmittedScores = true;
+      this.displayResults= false;
       this._addExam.removeAll();
     }
 }
