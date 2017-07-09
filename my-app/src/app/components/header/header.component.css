@@ -39,6 +39,14 @@
   font-size: 15px;
 }
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 form {
   color: black;
   font-size: 18px;

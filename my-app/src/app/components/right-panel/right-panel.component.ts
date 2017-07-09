@@ -4,7 +4,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScoreSelectService } from '../../services/score-select.service';
 import { AddExamService } from '../../services/add-exam.service';
 
-declare var $:JQueryStatic;
 
 @Component({
   selector: 'right-panel',
@@ -29,7 +28,6 @@ export class RightPanelComponent implements OnInit {
         if(score >= 0 && score <= 800) {
             this._addExam.addSelectedScore(score);
         } else {
-            $(".form-control").val('');
             alert("enter a valid score smh");
         }
     }
