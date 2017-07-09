@@ -26,8 +26,6 @@ export class AddExamService {
     if(score >= 0 && score <= 800) {
         this.exam.setScore(score);
         console.log(score);
-        //console.log("clearing it up");
-        //this._scoreSelect.reset();
     } else {
         alert("enter a valid score smh");
         console.log("failed");
