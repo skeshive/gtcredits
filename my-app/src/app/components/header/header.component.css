@@ -21,13 +21,12 @@
   color: white;
 }
 
-.modal-title {
-  color: black;
+.modal {
+    color: black;
 }
 
 .modal-body {
   width: 100%;
-  color: black;
   font-size: 14px;
   line-height: 20px;
   word-wrap: break-word;
