@@ -14,8 +14,8 @@ export class ResultsComponent implements OnInit {
     private _addExam: AddExamService) { }
     ngOnInit() { }
 
-      public reset() {
-        this._rightPanel.displayResults= false;
-        this._addExam.removeAll();
-      }
+  public reset() {
+    this._rightPanel.displayResults= false;
+    this._addExam.removeAll();
+  }
 }
