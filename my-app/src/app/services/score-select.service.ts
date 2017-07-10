@@ -40,7 +40,7 @@ export class ScoreSelectService {
     this.reset();
   }
 
-public satScoreClicked(score: number) {
+  public satScoreClicked(score: number) {
     this._addExam.addSelectedScore(score);
     this.reset();
   }
