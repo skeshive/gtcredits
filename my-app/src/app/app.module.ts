@@ -13,7 +13,7 @@ import { SATComponent } from './components/sat/sat.component';
 
 import { ScoreSelectService } from './services/score-select.service';
 import { AddExamService } from './services/add-exam.service';
-import { ConvertScoreService } './services/convert-score.service';
+import { ConvertScoreService } from './services/convert-score.service';
 
 @NgModule({
   declarations: [
