@@ -24,6 +24,8 @@ export class AddExamService {
     } else {
         alert("SMH! Enter a valid score.");
       }
+    var jsonTest = JSON.stringify(this.examArr);
+    console.log(jsonTest);
   }
 
   public checkDuplicates(exam: Exam) {
