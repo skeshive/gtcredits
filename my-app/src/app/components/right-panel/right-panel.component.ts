@@ -78,7 +78,7 @@ export class RightPanelComponent implements OnInit {
             });
             break;
         }
-        // this._convertScore.calculateTotalHours();
+        this._convertScore.calculateTotalHours();
         this.toggleDisplayResults();
       });
     }
