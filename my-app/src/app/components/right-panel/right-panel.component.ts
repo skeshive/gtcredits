@@ -1,4 +1,4 @@
-import { Component, OnInit,  AfterViewInit, ElementRef, Inject} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 
@@ -27,9 +27,29 @@ export class RightPanelComponent implements OnInit {
     }
 
     public callConvertScoreService() {
-      this._convertScore.getAPData().subscribe(res => {console.log(res);});
-      this._convertScore.getIBHighData().subscribe(res => {console.log(res);});
-      this._convertScore.getIBStandardData().subscribe(res => {console.log(res);});
-      this._convertScore.getSATData().subscribe(res => {console.log(res);});
+      this._addExam.examArr.forEach(exam => {
+        switch(exam.getType()) {
+          case 'AP':
+            this._convertScore.getAPData().subscribe(APData => {
+              console.log(JSON.parse(APData['_body']));
+            });
+            break;
+          case 'IB-High':
+            this._convertScore.getIBHighData().subscribe(IBHData => {
+              console.log(IBHData);
+            });
+            break;
+          case 'IB-Standard':
+            this._convertScore.getIBStandardData().subscribe(IBSData => {
+              console.log(IBSData);
+            });
+            break;
+          case 'SAT':
+            this._convertScore.getSATData().subscribe(SATData => {
+              console.log(SATData);
+            });
+            break;
+        }
+      });
     }
 }

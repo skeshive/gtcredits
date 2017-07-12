@@ -1,4 +1,4 @@
-AP {
+{
   "Art History": {"scores":[4,5], "course":"COA 2242", "hours":3},
   "Biology": {"scores":[4,5],"course":"BIOL 1510", "hours":4},
   "Calculus AB": {"scores":[4,5],"course":"MATH 1551","hours":2},
@@ -40,5 +40,5 @@ AP {
   "Studio Art: 3D": {"scores":[4,5],"course":"ARCH 1XXX","hours":3},
   "Studio Art: Drawing": {"scores":[],"course":"N/A","hours":0},
   "US History": {"scores":[4,5],"course":"HIST 2111","hours":3},
-  "World History": {"scores":[4,5],"course":"HTS 1XXX","hours":3},
+  "World History": {"scores":[4,5],"course":"HTS 1XXX","hours":3}
 }
