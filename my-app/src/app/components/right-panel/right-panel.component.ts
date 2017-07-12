@@ -30,26 +30,58 @@ export class RightPanelComponent implements OnInit {
       this._addExam.examArr.forEach(exam => {
         switch(exam.getType()) {
           case 'AP':
-            this._convertScore.getAPData().subscribe(APData => {
-              console.log(JSON.parse(APData['_body']));
+            this._convertScore.getAPData().subscribe(res => {
+              var apData = JSON.parse(res['_body']);
+              if (exam.getScore() >= apData[exam.getName()]['scores'][0]){
+                exam.setTranslatedCourse(apData[exam.getName()]['course']);
+                exam.setTranslatedHours(apData[exam.getName()]['hours']);
+              } else {
+                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedHours(0);
+              }
             });
             break;
           case 'IB-High':
-            this._convertScore.getIBHighData().subscribe(IBHData => {
-              console.log(IBHData);
+            this._convertScore.getIBHighData().subscribe(res => {
+              var ibhData = JSON.parse(res['_body']);
+              if (exam.getScore() >= ibhData[exam.getName()]['scores'][0]){
+                exam.setTranslatedCourse(ibhData[exam.getName()]['course']);
+                exam.setTranslatedHours(ibhData[exam.getName()]['hours']);
+              } else {
+                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedHours(0);
+              }
             });
             break;
           case 'IB-Standard':
-            this._convertScore.getIBStandardData().subscribe(IBSData => {
-              console.log(IBSData);
+            this._convertScore.getIBStandardData().subscribe(res => {
+              var ibsData = JSON.parse(res['_body']);
+              if (exam.getScore() >= ibsData[exam.getName()]['scores'][0]){
+                exam.setTranslatedCourse(ibsData[exam.getName()]['course']);
+                exam.setTranslatedHours(ibsData[exam.getName()]['hours']);
+              } else {
+                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedHours(0);
+              }
             });
             break;
           case 'SAT':
-            this._convertScore.getSATData().subscribe(SATData => {
-              console.log(SATData);
+            this._convertScore.getSATData().subscribe(res => {
+              var satData = JSON.parse(res['_body']);
+              if (exam.getScore() >= satData[exam.getName()]['scores'][0]){
+                exam.setTranslatedCourse(satData[exam.getName()]['course']);
+                exam.setTranslatedHours(satData[exam.getName()]['hours']);
+              } else {
+                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedHours(0);
+              }
             });
             break;
         }
+        // this._convertScore.calculateTotalHours();
+        this.toggleDisplayResults();
       });
     }
+
+
 }

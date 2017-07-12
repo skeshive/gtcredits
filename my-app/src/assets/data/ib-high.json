@@ -1,4 +1,4 @@
-IB-High {
+{
   "Biology": {"scores":[4,5],"course":"BIOL 1510", "hours":4},
   "Biology+": {"scores":[6,7],"course":"BIOL 1510 & BIOL 1520", "hours":8},
   "Chemistry": {"scores":[5,6,7],"course":"CHEM 1310","hours":4},
@@ -14,5 +14,5 @@ IB-High {
   "Mathematics": {"scores":[5,6,7],"course":"MATH 1551","hours":2},
   "Physics": {"scores":[5,6,7],"course":"PHYS 2211 & PHYS 2212","hours":8},
   "Psychology": {"scores":[5,6,7],"course":"PSYC 1101","hours":3},
-  "Spanish": {"scores":[5,6,7],"course":"SPAN 2001 & SPAN 2002","hours":6},
+  "Spanish": {"scores":[5,6,7],"course":"SPAN 2001 & SPAN 2002","hours":6}
 }

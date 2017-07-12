@@ -5,6 +5,8 @@ export class Exam {
   private score: number;
   private type: string;
   private index: number;
+  private translatedCourse: string;
+  private translatedHours: number;
 
   constructor() { }
 
@@ -24,6 +26,14 @@ export class Exam {
     return this.index;
   }
 
+  public getTranslatedCourse(): string {
+    return this.translatedCourse;
+  }
+
+  public getTranslatedHours(): number {
+    return this.translatedHours;
+  }
+
   public setName(name: string) {
     this.name = name;
   }
@@ -38,5 +48,13 @@ export class Exam {
 
   public setIndex(index: number) {
     this.index = index;
+  }
+
+  public setTranslatedCourse(translatedCourse: string) {
+    this.translatedCourse = translatedCourse;
+  }
+
+  public setTranslatedHours(translatedHours: number) {
+    this.translatedHours = translatedHours;
   }
 }
