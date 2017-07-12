@@ -1,4 +1,1 @@
-import { Injectable } from '@angular/core';
-
-@Injectable()
-export class ConvertScoreService { }
+import { Injectable } from '@angular/core';import { Http, Response } from '@angular/http';import 'rxjs/add/operator/map';@Injectable()export class ConvertScoreService {  constructor(private http: Http) { }  public getAPData(): any {    return this.http.get('../assets/data/ap.json').map(res => res);  }  public getIBHighData(): any {    return this.http.get('../assets/data/ib-high.json').map(res => res);  }  public getIBStandardData(): any {    return this.http.get('../assets/data/ib-standard.json').map(res => res);  }  public getSATData(): any {    return this.http.get('../assets/data/sat.json').map(res => res);  }}
