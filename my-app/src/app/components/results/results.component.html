@@ -4,7 +4,7 @@
   <div class="container">
       <div class="right-header"> ADDED SCORES </div>
       <div *ngFor="let exam of _addExam.examArr">
-          <div class *ngIf="exam.getTranslatedCourse() !== 'N/A'; else invalid">
+          <div class *ngIf="exam.getTranslatedCourse() !== 'SCORE DOES NOT TRANSLATE'; else invalid">
             <li class="list-group-item justify-content-between list-group-item-success"> {{exam.getType()}} {{exam.getName()}}
                 <span class="pull-right">
                     <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>

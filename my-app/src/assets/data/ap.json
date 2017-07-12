@@ -18,7 +18,7 @@
   "Government Comparative": {"scores":[4,5],"course":"INTA 1200","hours":3},
   "Government US": {"scores":[4,5],"course":"POL 1101","hours":3},
   "Human Geography": {"scores":[4,5],"course":"SS 1XXX","hours":3},
-  "Italian": {"scores":[],"course":"N/A","hours":0},
+  "Italian": {"scores":[],"course":"SCORE DOES NOT TRANSLATE","hours":0},
   "Japanese": {"scores":[3],"course":"JAPN 2002","hours":3},
   "Japanese+": {"scores":[4],"course":"JAPN 2002 & JAPN 3001","hours":6},
   "Japanese++": {"scores":[5],"course":"JAPN 3001 & JAPN 3002","hours":6},
@@ -35,10 +35,10 @@
   "Psychology": {"scores":[4,5],"course":"PSYC 1101","hours":3},
   "Spanish Language": {"scores":[4,5],"course":"SPAN 2001 & SPAN 2002","hours":6},
   "Spanish Literature": {"scores":[4,5],"course":"SPAN 2001 & SPAN 2002","hours":6},
-  "Statistics": {"scores":[],"course":"N/A","hours":0},
+  "Statistics": {"scores":[],"course":"SCORE DOES NOT TRANSLATE","hours":0},
   "Studio Art: 2D": {"scores":[4,5],"course":"ARCH 1XXX","hours":3},
   "Studio Art: 3D": {"scores":[4,5],"course":"ARCH 1XXX","hours":3},
-  "Studio Art: Drawing": {"scores":[],"course":"N/A","hours":0},
+  "Studio Art: Drawing": {"scores":[],"course":"SCORE DOES NOT TRANSLATE","hours":0},
   "US History": {"scores":[4,5],"course":"HIST 2111","hours":3},
   "World History": {"scores":[4,5],"course":"HTS 1XXX","hours":3}
 }

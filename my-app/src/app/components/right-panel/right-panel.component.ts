@@ -36,8 +36,11 @@ export class RightPanelComponent implements OnInit {
                 exam.setTranslatedCourse(apData[exam.getName()]['course']);
                 exam.setTranslatedHours(apData[exam.getName()]['hours']);
               } else {
-                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
+              }
+              if (this._addExam.examArr.every(exam => exam.getTranslatedHours() != null)) {
+                this._convertScore.calculateTotalHours();
               }
             });
             break;
@@ -48,8 +51,11 @@ export class RightPanelComponent implements OnInit {
                 exam.setTranslatedCourse(ibhData[exam.getName()]['course']);
                 exam.setTranslatedHours(ibhData[exam.getName()]['hours']);
               } else {
-                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
+              }
+              if (this._addExam.examArr.every(exam => exam.getTranslatedHours() != null)) {
+                this._convertScore.calculateTotalHours();
               }
             });
             break;
@@ -60,8 +66,11 @@ export class RightPanelComponent implements OnInit {
                 exam.setTranslatedCourse(ibsData[exam.getName()]['course']);
                 exam.setTranslatedHours(ibsData[exam.getName()]['hours']);
               } else {
-                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
+              }
+              if (this._addExam.examArr.every(exam => exam.getTranslatedHours() != null)) {
+                this._convertScore.calculateTotalHours();
               }
             });
             break;
@@ -72,13 +81,16 @@ export class RightPanelComponent implements OnInit {
                 exam.setTranslatedCourse(satData[exam.getName()]['course']);
                 exam.setTranslatedHours(satData[exam.getName()]['hours']);
               } else {
-                exam.setTranslatedCourse('N/A');
+                exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
+              }
+              if (this._addExam.examArr.every(exam => exam.getTranslatedHours() != null)) {
+                this._convertScore.calculateTotalHours();
               }
             });
             break;
         }
-        this._convertScore.calculateTotalHours();
+
         this.toggleDisplayResults();
       });
     }
