@@ -15,6 +15,7 @@ import { SATComponent } from './components/sat/sat.component';
 import { ScoreSelectService } from './services/score-select.service';
 import { AddExamService } from './services/add-exam.service';
 import { ConvertScoreService } from './services/convert-score.service';
+import { AcademicStandingService } from './services/academic-standing.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ConvertScoreService } from './services/convert-score.service';
   providers: [
     ScoreSelectService,
     AddExamService,
-    ConvertScoreService
+    ConvertScoreService,
+    AcademicStandingService
   ],
   bootstrap: [
     AppComponent
