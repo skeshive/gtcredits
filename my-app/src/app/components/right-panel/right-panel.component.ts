@@ -95,5 +95,12 @@ export class RightPanelComponent implements OnInit {
       });
     }
 
+    public getCourses() {
+        this._addExam.examArr.forEach(exam => {
+            console.log(exam.getTranslatedCourse());
+        });
+        var e = this._addExam.examArr[0];
+
+    }
 
 }
