@@ -49,7 +49,7 @@
             <i>SELECT AN EXAM TO CONTINUE</i>
         </div>
         <div *ngIf="!_addExam.examArrEmpty">
-            <button type="button" class="btn cancel" (click)="callConvertScoreService()"> SUBMIT </button>
+            <button type="button" class="btn cancel" (click)="callConvertScoreService(); getCourses()"> SUBMIT </button>
        </div>
     </div>
 
