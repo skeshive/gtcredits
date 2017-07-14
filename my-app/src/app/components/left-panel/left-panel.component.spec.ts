@@ -7,19 +7,19 @@ describe('LeftPanelComponent', () => {
   let fixture: ComponentFixture<LeftPanelComponent>;
 
   beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ LeftPanelComponent ]
-    })
-    .compileComponents();
+  TestBed.configureTestingModule({
+  declarations: [ LeftPanelComponent ]
+  })
+  .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LeftPanelComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  fixture = TestBed.createComponent(LeftPanelComponent);
+  component = fixture.componentInstance;
+  fixture.detectChanges();
   });
 
   it('should be created', () => {
-    expect(component).toBeTruthy();
+  expect(component).toBeTruthy();
   });
 });

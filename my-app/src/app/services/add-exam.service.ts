@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { Exam } from 'app/exam';
-import { RightPanelComponent } from 'app/components/right-panel/right-panel.component';
 
 @Injectable()
 export class AddExamService {
@@ -11,19 +10,19 @@ export class AddExamService {
   examArrEmpty: boolean = true;
   count = 0;
 
-  public createNewExam(name:string, type:string) {
+  public createNewExam(name: string, type: string) {
     this.exam.setName(name);
     this.exam.setType(type);
     this.exam.setIndex(this.count);
   }
 
   public addSelectedScore(score: number) {
-    if(score >= 0 && score <= 800) {
-        this.exam.setScore(score);
-        this.checkDuplicates(this.exam);
+    if (score >= 0 && score <= 800) {
+      this.exam.setScore(score);
+      this.checkDuplicates(this.exam);
     } else {
-        alert("SMH! Enter a valid score.");
-      }
+      alert("SMH! Enter a valid score.");
+    }
   }
 
   public checkDuplicates(exam: Exam) {
@@ -33,13 +32,13 @@ export class AddExamService {
       }
     }
     if (!this.duplicateExists) {
-        this.examArr.push(exam);
-        this.exam = new Exam();
-        this.count++;
-        this.examArrEmpty = false;
+      this.examArr.push(exam);
+      this.exam = new Exam();
+      this.count++;
+      this.examArrEmpty = false;
     } else {
-        alert("YIKES! This exam was already added.");
-        this.duplicateExists = false;
+      alert("YIKES! This exam was already added.");
+      this.duplicateExists = false;
     }
   }
 
@@ -48,9 +47,9 @@ export class AddExamService {
     this.count--;
 
     if(this.examArr.length == 0) {
-        this.examArrEmpty = true;
-        this.count = 0;
-    }
+    this.examArrEmpty = true;
+    this.count = 0;
+  }
 
     for (var i = index; i < this.examArr.length; i++) {
       this.examArr[i].setIndex(this.examArr[i].getIndex() - 1);

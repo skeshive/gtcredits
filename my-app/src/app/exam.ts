@@ -5,7 +5,7 @@ export class Exam {
   private score: number;
   private type: string;
   private index: number;
-  private translatedCourse: string;
+  private translatedCourse: string = null;
   private translatedHours: number = null;
 
   constructor() { }

@@ -4,10 +4,10 @@ import { AddExamService } from './add-exam.service';
 
 @Injectable()
 export class ScoreSelectService {
-    apExamSelected: boolean = false;
-    ibHighExamSelected: boolean = false;
-    ibStandardExamSelected: boolean = false;
-    satExamSelected: boolean = false;
+  apExamSelected: boolean = false;
+  ibHighExamSelected: boolean = false;
+  ibStandardExamSelected: boolean = false;
+  satExamSelected: boolean = false;
 
   constructor(private _addExam: AddExamService) { }
 

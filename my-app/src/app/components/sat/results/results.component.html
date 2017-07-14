@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="container">
+  <div class="right-header"> ADDED SCORES </div>
+  <div *ngFor="let exam of _addExam.examArr">
+  <div class *ngIf="exam.getTranslatedCourse() !== 'SCORE DOES NOT TRANSLATE'; else invalid">
+  <li class="list-group-item justify-content-between list-group-item-success"> {{exam.getType()}} {{exam.getName()}}
+  <span class="pull-right">
+  <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
+  </span>
+  </li>
+  </div>
+  <ng-template #invalid>
+  <li class="list-group-item justify-content-between list-group-item-danger"> {{exam.getType()}} {{exam.getName()}}
+  <span class="pull-right">
+  <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
+  </span>
+  </li>
+  </ng-template>
+  </div>
+  <hr style="border-top: dotted 0.5px;">
+
+  <div class="right-header"> TRANSLATED COURSES </div>
+  <ul class="list-group" *ngFor="let exam of _addExam.examArr">
+  <li class="list-group-item justify-content-between"> {{exam.getTranslatedCourse()}} <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span> </li>
+  </ul>
+  <hr style="border-top: dotted 0.5px;">
+
+  <div class="right-header"> ADDITIONAL FULFILMENTS </div>
+  <div class="label"> CORE AREA A </div>
+  <div class="label"> CORE AREA B </div>
+  <div class="label"> CORE AREA C </div>
+  <hr style="border-top: dotted 0.5px;">
+
+  <div class="right-header"> CREDITS </div>
+  <div class="credits"> {{this._convertScore.totalHours}} </div>
+  <hr style="border-top: dotted 0.5px;">
+
+  <div class="right-header"> CLASS STANDING </div>
+  <div class="label"> {{this._academicStanding.getStanding()}} </div>
+  <hr style="border-top: dotted 0.5px;">
+
+  <button class="btn reset" (click)="reset()"> RESET </button>
+  <hr style="border-top: dotted 0.5px;">
+  </div>
+</body>
+</html>
