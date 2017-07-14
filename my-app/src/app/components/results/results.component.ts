@@ -24,5 +24,6 @@ export class ResultsComponent implements OnInit {
     this._addExam.removeAll();
     this._convertScore.totalHours = 0;
     this._academicStanding.academicStanding = 'FRESHMAN';
+    this._convertScore.removeAll();
   }
 }
