@@ -35,6 +35,8 @@ export class RightPanelComponent implements OnInit {
               if (exam.getScore() >= apData[exam.getName()]['scores'][0]){
                 exam.setTranslatedCourse(apData[exam.getName()]['course']);
                 exam.setTranslatedHours(apData[exam.getName()]['hours']);
+                this._convertScore.addCourse(exam.getTranslatedCourse());
+                console.log(this._convertScore.getCourses());
               } else {
                 exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
@@ -50,6 +52,8 @@ export class RightPanelComponent implements OnInit {
               if (exam.getScore() >= ibhData[exam.getName()]['scores'][0]){
                 exam.setTranslatedCourse(ibhData[exam.getName()]['course']);
                 exam.setTranslatedHours(ibhData[exam.getName()]['hours']);
+                this._convertScore.addCourse(exam.getTranslatedCourse());
+                console.log(this._convertScore.getCourses());
               } else {
                 exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
@@ -65,6 +69,8 @@ export class RightPanelComponent implements OnInit {
               if (exam.getScore() >= ibsData[exam.getName()]['scores'][0]){
                 exam.setTranslatedCourse(ibsData[exam.getName()]['course']);
                 exam.setTranslatedHours(ibsData[exam.getName()]['hours']);
+                this._convertScore.addCourse(exam.getTranslatedCourse());
+                console.log(this._convertScore.getCourses());
               } else {
                 exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
@@ -80,6 +86,8 @@ export class RightPanelComponent implements OnInit {
               if (exam.getScore() >= satData[exam.getName()]['scores'][0]){
                 exam.setTranslatedCourse(satData[exam.getName()]['course']);
                 exam.setTranslatedHours(satData[exam.getName()]['hours']);
+                this._convertScore.addCourse(exam.getTranslatedCourse());
+                console.log(this._convertScore.getCourses());
               } else {
                 exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
                 exam.setTranslatedHours(0);
@@ -90,17 +98,7 @@ export class RightPanelComponent implements OnInit {
             });
             break;
         }
-
         this.toggleDisplayResults();
       });
     }
-
-    public getCourses() {
-        this._addExam.examArr.forEach(exam => {
-            console.log(exam.getTranslatedCourse());
-        });
-        var e = this._addExam.examArr[0];
-
-    }
-
 }
