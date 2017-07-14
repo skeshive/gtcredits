@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Exam } from 'app/exam';
 
 @Injectable()
-export class AddExamService {
+export class ExamService {
   exam = new Exam();
   examArr: Exam[] =[];
   duplicateExists: boolean = false;

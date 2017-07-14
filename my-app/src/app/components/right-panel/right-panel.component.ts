@@ -3,7 +3,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 
 import { ScoreSelectService } from '../../services/score-select.service';
-import { AddExamService } from '../../services/add-exam.service';
+import { ExamService } from '../../services/exam.service';
 import { ConvertScoreService } from '../../services/convert-score.service';
 
 
@@ -16,7 +16,7 @@ import { ConvertScoreService } from '../../services/convert-score.service';
 export class RightPanelComponent implements OnInit {
   constructor(
   private _scoreSelect: ScoreSelectService,
-  private _addExam: AddExamService,
+  private _addExam: ExamService,
   private _convertScore: ConvertScoreService) { }
   ngOnInit() { }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit,  AfterViewInit, ElementRef, Inject} from '@angular/core';
 import { RightPanelComponent } from '../right-panel/right-panel.component';
 
-import { AddExamService } from '../../services/add-exam.service';
+import { ExamService } from '../../services/exam.service';
 import { ConvertScoreService } from '../../services/convert-score.service';
 import { AcademicStandingService } from '../../services/academic-standing.service';
 
@@ -14,7 +14,7 @@ import { AcademicStandingService } from '../../services/academic-standing.servic
 export class ResultsComponent implements OnInit {
   constructor(
   private _rightPanel: RightPanelComponent,
-  private _addExam: AddExamService,
+  private _addExam: ExamService,
   private _convertScore: ConvertScoreService,
   private _academicStanding: AcademicStandingService) { }
   ngOnInit() { }

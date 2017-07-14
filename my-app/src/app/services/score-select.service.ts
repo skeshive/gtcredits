@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { AddExamService } from './add-exam.service';
+import { ExamService } from './exam.service';
 
 @Injectable()
 export class ScoreSelectService {
@@ -9,7 +9,7 @@ export class ScoreSelectService {
   ibStandardExamSelected: boolean = false;
   satExamSelected: boolean = false;
 
-  constructor(private _addExam: AddExamService) { }
+  constructor(private _addExam: ExamService) { }
 
   public apClicked(event) {
     this.reset();

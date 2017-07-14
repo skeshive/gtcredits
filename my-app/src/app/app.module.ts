@@ -13,7 +13,7 @@ import { IBComponent } from './components/ib/ib.component';
 import { SATComponent } from './components/sat/sat.component';
 
 import { ScoreSelectService } from './services/score-select.service';
-import { AddExamService } from './services/add-exam.service';
+import { ExamService } from './services/exam.service';
 import { ConvertScoreService } from './services/convert-score.service';
 import { AcademicStandingService } from './services/academic-standing.service';
 
@@ -35,7 +35,7 @@ import { AcademicStandingService } from './services/academic-standing.service';
   ],
   providers: [
   ScoreSelectService,
-  AddExamService,
+  ExamService,
   ConvertScoreService,
   AcademicStandingService
   ],
