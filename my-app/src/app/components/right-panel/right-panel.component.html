@@ -33,22 +33,22 @@
     </div>
 
     <div class="right-header" role="group"> ADDED SCORES</div>
-    <ul class="list-group" *ngFor="let exam of _addExam.examArr">
+    <ul class="list-group" *ngFor="let exam of _exam.examArr">
       <li class="list-group-item justify-content-between"> {{exam.getType()}} {{exam.getName()}}
         <span class="pull-right">
           <span class="badge badge-default badge-pill"> {{exam.getScore()}} </span>
-          <button type="button" class="close" aria-label="Close" (click)="_addExam.removeSelectedScore(exam.getIndex())">
+          <button type="button" class="close" aria-label="Close" (click)="_exam.removeSelectedScore(exam.getIndex())">
             <span aria-hidden="true">&times;</span>
           </button>
         </span>
       </li>
     </ul>
 
-    <div class="alert" *ngIf="_addExam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
+    <div class="alert" *ngIf="_exam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
       <i>Select an Exam to Continue</i>
     </div>
-    <div *ngIf="!_addExam.examArrEmpty">
-      <button type="button" class="btn cancel" (click)="callConvertScoreService();test()"> SUBMIT </button>
+    <div *ngIf="!_exam.examArrEmpty">
+      <button type="button" class="btn cancel" (click)="_convertScore.parseData()"> SUBMIT </button>
     </div>
   </div>
 

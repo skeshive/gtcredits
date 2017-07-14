@@ -9,39 +9,39 @@ export class ScoreSelectService {
   ibStandardExamSelected: boolean = false;
   satExamSelected: boolean = false;
 
-  constructor(private _addExam: ExamService) { }
+  constructor(private _exam: ExamService) { }
 
   public apClicked(event) {
     this.reset();
     this.apExamSelected = true;
-    this._addExam.createNewExam(event.srcElement.attributes.id.nodeValue, "AP");
+    this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "AP");
   }
 
   public ibHighClicked(event) {
     this.reset();
     this.ibHighExamSelected = true;
-    this._addExam.createNewExam(event.srcElement.attributes.id.nodeValue, "IB-High");
+    this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "IB-High");
   }
 
   public ibStandardClicked(event) {
     this.reset();
     this.ibStandardExamSelected = true;
-    this._addExam.createNewExam(event.srcElement.attributes.id.nodeValue, "IB-Standard");
+    this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "IB-Standard");
   }
 
   public satClicked(event) {
     this.reset();
     this.satExamSelected = true;
-    this._addExam.createNewExam(event.srcElement.attributes.id.nodeValue, "SAT");
+    this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "SAT");
   }
 
   public scoreClicked(event) {
-    this._addExam.addSelectedScore(event.srcElement.attributes.id.nodeValue);
+    this._exam.addSelectedScore(event.srcElement.attributes.id.nodeValue);
     this.reset();
   }
 
   public satScoreClicked(score: number) {
-    this._addExam.addSelectedScore(score);
+    this._exam.addSelectedScore(score);
     this.reset();
   }
 

@@ -14,14 +14,14 @@ import { AcademicStandingService } from '../../services/academic-standing.servic
 export class ResultsComponent implements OnInit {
   constructor(
   private _rightPanel: RightPanelComponent,
-  private _addExam: ExamService,
+  private _exam: ExamService,
   private _convertScore: ConvertScoreService,
   private _academicStanding: AcademicStandingService) { }
   ngOnInit() { }
 
   public reset() {
   this._rightPanel.displayResults= false;
-  this._addExam.removeAll();
+  this._exam.removeAll();
   this._convertScore.totalHours = 0;
   this._academicStanding.academicStanding = 'FRESHMAN';
   this._convertScore.removeAll();
