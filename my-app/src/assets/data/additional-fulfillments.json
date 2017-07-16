@@ -1,6 +1,0 @@
-{
-  "Core Area C": {"courses" : ["COA 2242", "CHIN 2002", "JAPN 2002", "MUSI 2600 & MUSI 3600", "1002"]},
-  "Constitution and History": {"courses" : ["INTA 1200", "POL 1101", "HIST 2111", "HIST 2112"]},
-  "Core Area D: Science": {"courses" : ["CHEM 1211K", "BIOL 1510", "EAS 1600", "PHYS 2211", "PHYS 2XXX", "CHEM 1310"]},
-  "Core Area E": {"courses" : ["HTS 1031", "INTA 1200", "POL 1101", "ECON 2105", "ECON 2106", "PSYC 1101", "HIST 2111", "ECON 2100", "HTS 2037", "HIST 2112"]}
-}
