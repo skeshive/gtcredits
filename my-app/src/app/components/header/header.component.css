@@ -6,10 +6,10 @@
 }
 
 .navbar-brand {
-    font-size: 28px;
-    line-height: 55px;
-    font-family: 'Raleway';
-    color: black;
+  font-size: 28px;
+  line-height: 55px;
+  font-family: 'Raleway';
+  color: white !important;
 }
 
 .header-icons {
@@ -17,11 +17,44 @@
 }
 
 .btn {
-    background-color: #323232;
-    color: white;
+  background-color: #323232;
+  color: white;
+}
+
+.fa-bars {
+  font-size: 30px;
+}
+
+.modal {
+  color: black;
+}
+
+.modal-body {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .modal-footer {
-    color: #323232;
-    font-size: 15px;
+  color: #323232;
+  font-size: 15px;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+form {
+  color: black;
+  font-size: 18px;
+}
+
+label {
+  margin: 0;
 }

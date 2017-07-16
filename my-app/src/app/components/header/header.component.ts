@@ -8,5 +8,4 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class HeaderComponent { }
-
 export class NgbdDropdownBasic { }

@@ -1,37 +1,19 @@
-body, html {
-  overflow: hidden;
-  height:100%;
-}
-
 .card {
-    margin-bottom: 5px;
-}
-
-.card-header {
-  font-family: "Raleway";
-}
-
-.card-title {
+  margin-bottom: 5px;
   font-family: "Raleway";
 }
 
 .btn-secondary {
-  font-family: 'Roboto Condensed';
+  font-family: 'Raleway';
 }
 
 .btn-secondary:focus {
   background-color: #FFD700;
 }
 
-.btn-outline-secondary {
-  font-family: "Roboto Condensed";
-}
-
-.btn-primary {
-  font-family: "Raleway";
-}
-
-#wrapper {
-    display: flex;
-    justify-content: center;
+.button-group {
+  width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 0;
 }
