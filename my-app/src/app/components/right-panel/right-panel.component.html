@@ -2,8 +2,8 @@
 <html>
 <body>
   <div class="container" *ngIf="!displayResults; else results">
-    <div class="right-header"> ADD SELECTED SCORE </div>
     <div *ngIf="_scoreSelect.apExamSelected">
+      <div class="right-header"> SELECT A SCORE </div>
       <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
       <button class="btn" id=2 (click)="_scoreSelect.scoreClicked($event)">2</button>
       <button class="btn" id=3 (click)="_scoreSelect.scoreClicked($event)">3</button>
@@ -11,6 +11,7 @@
       <button class="btn" id=5 (click)="_scoreSelect.scoreClicked($event)">5</button>
     </div>
     <div *ngIf="_scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected">
+      <div class="right-header"> SELECT A SCORE </div>
       <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
       <button class="btn" id=2 (click)="_scoreSelect.scoreClicked($event)">2</button>
       <button class="btn" id=3 (click)="_scoreSelect.scoreClicked($event)">3</button>
@@ -20,6 +21,7 @@
       <button class="btn" id=7 (click)="_scoreSelect.scoreClicked($event)">7</button>
     </div>
     <div *ngIf="_scoreSelect.satExamSelected">
+      <div class="right-header"> SELECT A SCORE </div>
       <div class="input-group">
         <input class="form-control text-center" type="text" placeholder="0-800" #satInput id="satInput">
         <span class="input-group-btn">
@@ -32,7 +34,7 @@
       <button type="button" class="btn cancel" (click)="_scoreSelect.reset()" > CANCEL </button>
     </div>
 
-    <div class="right-header" role="group"> ADDED SCORES</div>
+    <div class="right-header" role="group"> ADDED EXAMS</div>
     <ul class="list-group" *ngFor="let exam of _exam.examArr">
       <li class="list-group-item justify-content-between"> {{exam.getType()}} {{exam.getName()}}
         <span class="pull-right">
@@ -45,7 +47,7 @@
     </ul>
 
     <div class="alert" *ngIf="_exam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
-      <i>Select an Exam to Continue</i>
+      <i>SELECT AN EXAM TO CONTINUE</i>
     </div>
     <div *ngIf="!_exam.examArrEmpty">
       <button type="button" class="btn cancel" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
