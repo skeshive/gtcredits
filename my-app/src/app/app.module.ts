@@ -18,27 +18,27 @@ import { ConvertScoreService } from './services/convert-score.service';
 
 @NgModule({
   declarations: [
-  AppComponent,
-  HeaderComponent,
-  LeftPanelComponent,
-  RightPanelComponent,
-  ResultsComponent,
-  APComponent,
-  IBComponent,
-  SATComponent
+    AppComponent,
+    HeaderComponent,
+    LeftPanelComponent,
+    RightPanelComponent,
+    ResultsComponent,
+    APComponent,
+    IBComponent,
+    SATComponent
   ],
   imports: [
-  NgbModule.forRoot(),
-  BrowserModule,
-  HttpModule
+    NgbModule.forRoot(),
+    BrowserModule,
+    HttpModule
   ],
   providers: [
-  ScoreSelectService,
-  ExamService,
-  ConvertScoreService
+    ScoreSelectService,
+    ExamService,
+    ConvertScoreService
   ],
   bootstrap: [
-  AppComponent
+    AppComponent
   ]
 })
 
