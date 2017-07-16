@@ -2,6 +2,9 @@
 
 Currently, incoming freshmen have to manually calculate how many institutional credits they will receive for their AP, IB, and SAT exams. In order to alleviate this problem, we developed GT Credits. After selecting relevant exams and scores, students will be able to see how many institutional credits they will earn, the translated courses they will receive credit for, and their academic standing as incoming students at Georgia Tech.
 
+![alt text](screenshots/add-scores.png)
+![alt text](screenshots/results.png)
+
 **Last Updated: July 2017**
 
 ## Getting Started
