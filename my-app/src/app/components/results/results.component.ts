@@ -21,6 +21,6 @@ export class ResultsComponent implements OnInit {
     this._rightPanel.displayResults= false;
     this._exam.removeAll();
     this._convertScore.setTotalHours(0);
-    this._convertScore.setAcademicStanding('FRESHAMN');
+    this._convertScore.setAcademicStanding('FRESHMAN');
   }
 }
