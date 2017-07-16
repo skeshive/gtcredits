@@ -2,11 +2,18 @@
 <html>
 <body>
   <header></header>
-  <div class="container-fluid" id="home">
+  <div *ngIf="!this._convertScore.displayResults; else results" class="container-fluid" id="home">
     <div class="row">
       <div class="col-md-8"><left-panel></left-panel></div>
       <div class="col-md-4" style="background-color:#FFD700;padding-bottom:1%;"><right-panel></right-panel></div>
     </div>
   </div>
+  <ng-template #results>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12"> <results> </results></div>
+      </div>
+    </div>
+  </ng-template>
 </body>
 </html>

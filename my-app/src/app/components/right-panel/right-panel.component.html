@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div class="container" *ngIf="!displayResults; else results">
+  <div class="container">
     <div *ngIf="_scoreSelect.apExamSelected">
       <div class="right-header"> SELECT A SCORE </div>
       <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
@@ -53,10 +53,6 @@
       <button type="button" class="btn cancel" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
     </div>
   </div>
-
-  <ng-template #results>
-    <results></results>
-  </ng-template>
 
 </body>
 </html>
