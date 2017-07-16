@@ -31,7 +31,7 @@
     </div>
 
     <div *ngIf="_scoreSelect.apExamSelected || _scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected || _scoreSelect.satExamSelected ">
-      <button type="button" class="btn cancel" (click)="_scoreSelect.reset()" > CANCEL </button>
+      <button type="button" class="btn lg" (click)="_scoreSelect.reset()" > CANCEL </button>
     </div>
 
     <div class="right-header" role="group"> ADDED EXAMS</div>
@@ -50,7 +50,7 @@
       SELECT AN EXAM TO CONTINUE
     </div>
     <div *ngIf="!_exam.examArrEmpty">
-      <button type="button" class="btn cancel" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
+      <button type="button" class="btn lg" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
     </div>
   </div>
 

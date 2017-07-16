@@ -15,16 +15,6 @@ body, html {
   padding-top: 1%;
 }
 
-.submit {
-  background-color: #00254c;
-  color: white;
-  font-family: 'Raleway';
-  font-size: 12px;
-  width: 10px;
-  height: 30px;
-  border: 0px;
-}
-
 .btn {
   color: white;
   background-color: #323232;
@@ -40,7 +30,7 @@ body, html {
   border-color: white;
 }
 
-.btn.cancel {
+.btn.lg {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
@@ -51,13 +41,20 @@ body, html {
   border: 0px;
 }
 
-.btn.cancel:hover {
+.btn.lg:hover {
   color: #323232;
   background-color: white;
   border-color: #323232;
-  margin: 1%;
-  opacity: .95;
-  width: 100px;
+}
+
+.submit {
+  background-color: #00254c;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 12px;
+  width: 10px;
+  height: 30px;
+  border: 0px;
 }
 
 .badge {
