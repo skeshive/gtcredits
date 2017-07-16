@@ -47,7 +47,7 @@
     </ul>
 
     <div class="alert" *ngIf="_exam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
-      <i>SELECT AN EXAM TO CONTINUE</i>
+      SELECT AN EXAM TO CONTINUE
     </div>
     <div *ngIf="!_exam.examArrEmpty">
       <button type="button" class="btn cancel" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
