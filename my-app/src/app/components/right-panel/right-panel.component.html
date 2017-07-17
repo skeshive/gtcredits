@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div class="container" *ngIf="!displayResults; else results">
+  <div class="container">
     <div *ngIf="_scoreSelect.apExamSelected">
       <div class="right-header"> SELECT A SCORE </div>
       <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
@@ -31,7 +31,7 @@
     </div>
 
     <div *ngIf="_scoreSelect.apExamSelected || _scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected || _scoreSelect.satExamSelected ">
-      <button type="button" class="btn cancel" (click)="_scoreSelect.reset()" > CANCEL </button>
+      <button type="button" class="btn lg" (click)="_scoreSelect.reset()" > CANCEL </button>
     </div>
 
     <div class="right-header" role="group"> ADDED EXAMS</div>
@@ -50,13 +50,9 @@
       SELECT AN EXAM TO CONTINUE
     </div>
     <div *ngIf="!_exam.examArrEmpty">
-      <button type="button" class="btn cancel" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
+      <button type="button" class="btn lg" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
     </div>
   </div>
-
-  <ng-template #results>
-    <results></results>
-  </ng-template>
 
 </body>
 </html>
