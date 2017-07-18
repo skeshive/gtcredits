@@ -1,10 +1,9 @@
-body, html {
-  background-color: #FFD700;
+.container {
+  text-align: center;
 }
 
-.container {
-  background-color: #FFD700;
-  text-align:center;
+.col-md-4 {
+  padding-top: 6%;
 }
 
 .right-header {
@@ -15,44 +14,25 @@ body, html {
   padding-top: 1%;
 }
 
-.btn {
-  color: white;
-  background-color: #323232;
-  border-color: #323232;
-  margin: 1%;
-  opacity: .95;
-  width: auto;
-}
-
-.btn:hover {
-  color: #323232;
-  background-color: white;
-  border-color: white;
-}
-
 .btn.reset {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
   font-size: 16px;
-  margin-top: 4%;
+  margin-top: 10%;
   margin-bottom: 4%;
-  width: 300px;
+  width: auto;
   height: 35px;
   border: 0px;
 }
 
 .btn.reset:hover {
-  color: #323232;
   background-color: white;
-  border-color: #323232;
-  margin: 1%;
-  opacity: .95;
-  width: 100px;
+  color: #00254c;
 }
 
 .label {
-  background-color: white;
+  background-color: #EFEFEF;
   color: #323232;
   font-family: 'Raleway';
   font-size: 16px;
@@ -62,6 +42,10 @@ body, html {
   width: 150px;
   height: 40px;
   margin: 5px;
+}
+
+.translated-courses {
+  background-color: #EFEFEF;
 }
 
 .credits {
