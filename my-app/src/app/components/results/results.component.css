@@ -9,7 +9,7 @@
 .right-header {
   color: black;
   font-size: 22px;
-  text-decoration: underline;
+  font-weight: bold;
   font-family: 'Raleway';
   padding-top: 1%;
 }
