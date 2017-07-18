@@ -11,7 +11,7 @@ Currently, incoming freshmen have to manually calculate how many institutional c
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### Dependencies
 
 Install [Node.js and npm](https://nodejs.org/en/download/) if they are not already on your machine.
 
@@ -37,7 +37,7 @@ ng serve --open
 ## Built With
 
 * [Angular 2](https://angular.io/) - Web Framework
-* [Bootstrap](http://getbootstrap.com/) - CSS Framework
+* [Bootstrap v4](http://getbootstrap.com/) - CSS Framework
 
 
 ## Authors
