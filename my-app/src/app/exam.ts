@@ -7,6 +7,7 @@ export class Exam {
   private index: number;
   private translatedCourse: string = null;
   private translatedHours: number = null;
+  private duplicateCourseExists: boolean = false;
 
   constructor() { }
 
@@ -34,6 +35,10 @@ export class Exam {
     return this.translatedHours;
   }
 
+  public getDuplicateCourseExists(): boolean {
+    return this.duplicateCourseExists;
+  }
+
   public setName(name: string) {
     this.name = name;
   }
@@ -56,5 +61,9 @@ export class Exam {
 
   public setTranslatedHours(translatedHours: number) {
     this.translatedHours = translatedHours;
+  }
+
+  public setDuplicateCourseExists(duplicateCourseExists: boolean) {
+    this.duplicateCourseExists = duplicateCourseExists;
   }
 }
