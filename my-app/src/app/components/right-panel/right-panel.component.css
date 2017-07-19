@@ -9,8 +9,8 @@ body, html {
 
 .right-header {
   color: black;
-  font-size: 22px;
-  text-decoration: underline;
+  font-size: 24px;
+  font-weight: bold;
   font-family: 'Raleway';
   padding-top: 1%;
 }
@@ -35,7 +35,8 @@ body, html {
   color: white;
   font-family: 'Raleway';
   font-size: 16px;
-  margin-top: 5%;
+  margin-top: 4%;
+  margin-bottom: 5%;
   width: 120px;
   height: 35px;
   border: 0px;
