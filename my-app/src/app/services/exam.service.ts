@@ -46,6 +46,7 @@ export class ExamService {
     this.examArr.splice(index, 1);
     this.count--;
 
+
     if(this.examArr.length == 0) {
     this.examArrEmpty = true;
     this.count = 0;

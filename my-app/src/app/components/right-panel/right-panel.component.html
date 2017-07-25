@@ -50,7 +50,7 @@
       SELECT AN EXAM TO CONTINUE
     </div>
     <div *ngIf="!_exam.examArrEmpty">
-      <button type="button" class="btn lg" (click)="_convertScore.parseData(); toggleDisplayResults();"> SUBMIT </button>
+      <button type="button" class="btn lg" (click)="_convertScore.separateData(); toggleDisplayResults();"> SUBMIT </button>
     </div>
   </div>
 
