@@ -1,5 +1,6 @@
 {
   "Chemistry": {"scores":[680], "course":"CHEM 1211K", "hours":4},
+  "Chemistry+": {"scores":[730], "course":"CHEM 1310", "hours":4},
   "English": {"scores":[750], "course":"ENGL 1101", "hours":3},
   "US History": {"scores":[710], "course":"HIST 2111", "hours":3},
   "World History": {"scores":[710], "course":"HTS 1XXX", "hours":3}

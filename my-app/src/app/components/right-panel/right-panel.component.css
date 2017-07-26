@@ -48,14 +48,11 @@ body, html {
   border-color: #323232;
 }
 
-.submit {
+.btn-sm {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
   font-size: 12px;
-  width: 10px;
-  height: 30px;
-  border: 0px;
 }
 
 .badge {
