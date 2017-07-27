@@ -21,14 +21,16 @@
       <button class="btn" id=7 (click)="_scoreSelect.scoreClicked($event)">7</button>
     </div>
     <div *ngIf="_scoreSelect.satExamSelected">
-      <div class="right-header"> SELECT A SCORE </div>
+      <div class="right-header"> TYPE IN A SCORE </div>
+     <div class="col">
       <div class="input-group">
         <input class="form-control text-center" type="text" placeholder="0-800" #satInput id="satInput">
         <span class="input-group-btn">
-          <button type="button" class="btn submit" (click)="_scoreSelect.satScoreClicked(satInput.value);"> SUBMIT </button>
+          <button type="button" class="btn btn-sm" (click)="_scoreSelect.satScoreClicked(satInput.value)"> SUBMIT </button>
         </span>
-      </div>
     </div>
+    </div>
+</div>
 
     <div *ngIf="_scoreSelect.apExamSelected || _scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected || _scoreSelect.satExamSelected ">
       <button type="button" class="btn lg" (click)="_scoreSelect.reset()" > CANCEL </button>
