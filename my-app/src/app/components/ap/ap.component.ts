@@ -10,6 +10,7 @@ import { ScoreSelectService } from '../../services/score-select.service';
 })
 
 export class APComponent implements OnInit {
-  constructor(private _scoreSelect: ScoreSelectService) { }
+  constructor(
+    private _scoreSelect: ScoreSelectService) { }
   ngOnInit() { }
 }
