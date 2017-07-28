@@ -10,6 +10,7 @@
       <button class="btn" id=4 (click)="_scoreSelect.scoreClicked($event)">4</button>
       <button class="btn" id=5 (click)="_scoreSelect.scoreClicked($event)">5</button>
     </div>
+
     <div *ngIf="_scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected">
       <h1 class="right-header"> SELECT A SCORE </h1>
       <button class="btn" id=1 (click)="_scoreSelect.scoreClicked($event)">1</button>
@@ -20,17 +21,16 @@
       <button class="btn" id=6 (click)="_scoreSelect.scoreClicked($event)">6</button>
       <button class="btn" id=7 (click)="_scoreSelect.scoreClicked($event)">7</button>
     </div>
+
     <div *ngIf="_scoreSelect.satExamSelected">
       <h1 class="right-header"> TYPE IN A SCORE </h1>
-     <div class="col">
       <div class="input-group">
-        <input class="form-control text-center" type="text" placeholder="0-800" #satInput id="satInput">
+        <input class="form-control text-center" type="text" placeholder="0-800" #satInput>
         <span class="input-group-btn">
           <button type="button" class="btn btn-sm" (click)="_scoreSelect.satScoreClicked(satInput.value)"> SUBMIT </button>
         </span>
+      </div>
     </div>
-    </div>
-</div>
 
     <div *ngIf="_scoreSelect.apExamSelected || _scoreSelect.ibHighExamSelected || _scoreSelect.ibStandardExamSelected || _scoreSelect.satExamSelected ">
       <button type="button" class="btn lg" (click)="_scoreSelect.reset()" > CANCEL </button>
@@ -51,8 +51,9 @@
     <div class="alert" *ngIf="_exam.examArrEmpty" style="background-color: whitesmoke;" role="alert">
       SELECT AN EXAM TO CONTINUE
     </div>
+    
     <div *ngIf="!_exam.examArrEmpty">
-      <button type="button" class="btn lg" (click)="_convertScore.separateData(); toggleDisplayResults();"> SUBMIT </button>
+      <button type="button" class="btn lg" (click)="_convertScore.separateData();"> SUBMIT </button>
     </div>
   </div>
 
