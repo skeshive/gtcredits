@@ -24,7 +24,7 @@
         <button class="btn reset" (click)="reset()"> RESET </button>
       </div>
       <div class="col-md-5">
-        <h1 class="right-header"> TRANSLATED COURSES </h1>
+        <h1 class="right-header"> TRANSLATED COURSES* </h1>
         <div class="list-group" *ngFor="let exam of _exam.examArr">
           <div class *ngIf="exam.getTranslatedCourse() !== 'SCORE DOES NOT TRANSLATE'; else warning">
             <li class="list-group-item justify-content-between no-warning">
@@ -38,8 +38,8 @@
               <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span>
             </li>
           </ng-template>
-
-      </div>
+        </div>
+        <h4 class="disclaimer">*DUPLICATE COURSES MAY RESULT FROM SUBMITTED SCORES</h4>
       </div>
       <div class="col-md-2">
         <h1 class="right-header"> CREDITS </h1>

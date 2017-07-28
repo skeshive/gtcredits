@@ -65,3 +65,8 @@
   opacity: .75;
   border-radius: 30px;
 }
+
+.disclaimer {
+  font-size: 14px;
+  margin-top: 10px;
+}
