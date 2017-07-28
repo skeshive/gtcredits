@@ -8,6 +8,7 @@ export class Exam {
   private translatedCourse: string = null;
   private translatedHours: number = null;
   private duplicateCourseExists: boolean = false;
+  private exceptionArray: string[] = [];
 
   constructor() { }
 
@@ -39,6 +40,10 @@ export class Exam {
     return this.duplicateCourseExists;
   }
 
+  public getExceptionArray(): string[] {
+    return this.exceptionArray;
+  }
+
   public setName(name: string) {
     this.name = name;
   }
@@ -65,5 +70,9 @@ export class Exam {
 
   public setDuplicateCourseExists(duplicateCourseExists: boolean) {
     this.duplicateCourseExists = duplicateCourseExists;
+  }
+
+  public setExceptionArray(exceptionArray: string[]) {
+    this.exceptionArray = exceptionArray;
   }
 }
