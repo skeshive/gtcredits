@@ -6,7 +6,9 @@
   "apps": [{
     "root": "src",
     "outDir": "dist",
-    "assets": [ "assets" ],
+    "assets": [
+      "assets"
+    ],
     "index": "index.html",
     "main": "main.ts",
     "polyfills": "polyfills.ts",
@@ -15,7 +17,6 @@
     "testTsconfig": "tsconfig.spec.json",
     "prefix": "app",
     "styles": [
-      "styles.css",
       "../node_modules/bootstrap/dist/css/bootstrap.min.css"
     ],
     "scripts": [
@@ -36,7 +37,8 @@
   "lint": [
     { "project": "src/tsconfig.app.json" },
     { "project": "src/tsconfig.spec.json" },
-    { "project": "e2e/tsconfig.e2e.json" }],
+    { "project": "e2e/tsconfig.e2e.json" }
+  ],
   "defaults": {
     "styleExt": "css",
     "component": { }

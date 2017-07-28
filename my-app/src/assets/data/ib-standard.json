@@ -1,13 +1,13 @@
 {
-	"Biology": {"scores":[6,7], "course":"BIOL 1510", "hours":4},
-	"Chemistry": {"scores":[6,7], "course":"CHEM 1XXX", "hours":4},
-	"Computer Science": {"scores":[6,7], "course":"CS 1XXX", "hours":3},
-	"Economics": {"scores":[6,7], "course":"ECON 1XXX", "hours":3},
-	"English": {"scores":[6,7], "course":"ENGL 1101", "hours":3},
-	"European History": {"scores":[6,7], "course":"HTS 1XXX", "hours":3},
-	"Foreign Language": {"scores":[6,7], "course":"1002", "hours":3},
-	"History of Americas": {"scores":[6,7], "course":"HTS 1XXX", "hours":3},
-	"Mathematics": {"scores":[5,6,7], "course":"MATH 1551", "hours":2},
-	"Physics": {"scores":[6,7], "course":"PHYS 2XXX", "hours":4},
-	"Psychology": {"scores":[6,7], "course":"PSYC 1XXX", "hours":3}
+	"Biology": { "scores":[6,7], "course":"BIOL 1510", "hours":4 },
+	"Chemistry": { "scores":[6,7], "course":"CHEM 1XXX", "hours":4 },
+	"Computer Science": { "scores":[6,7], "course":"CS 1XXX", "hours":3 },
+	"Economics": { "scores":[6,7], "course":"ECON 1XXX", "hours":3 },
+	"English": { "scores":[6,7], "course":"ENGL 1101", "hours":3 },
+	"European History": { "scores":[6,7], "course":"HTS 1XXX", "hours":3 },
+	"Foreign Language": { "scores":[6,7], "course":"1002", "hours":3 },
+	"History of Americas": { "scores":[6,7], "course":"HTS 1XXX", "hours":3 },
+	"Mathematics": { "scores":[5,6,7], "course":"MATH 1551", "hours":2 },
+	"Physics": { "scores":[6,7], "course":"PHYS 2XXX", "hours":4 },
+	"Psychology": { "scores":[6,7], "course":"PSYC 1XXX", "hours":3 }
 }
