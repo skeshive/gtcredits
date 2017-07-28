@@ -25,12 +25,21 @@
       </div>
       <div class="col-md-5">
         <div class="right-header"> TRANSLATED COURSES </div>
-        <ul class="list-group" *ngFor="let exam of _exam.examArr">
-          <li class="list-group-item justify-content-between translated-courses" *ngIf="!exam.getDuplicateCourseExists(); else duplicate"> {{exam.getTranslatedCourse()}} <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span> </li>
-          <ng-template #duplicate>
-            <li class="list-group-item justify-content-between list-group-item-warning"> {{exam.getTranslatedCourse()}} <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span> </li>
+        <div class="list-group" *ngFor="let exam of _exam.examArr">
+          <div class *ngIf="exam.getTranslatedCourse() !== 'SCORE DOES NOT TRANSLATE'; else warning">
+            <li class="list-group-item justify-content-between no-warning">
+              {{exam.getTranslatedCourse()}}
+              <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span>
+            </li>
+          </div>
+          <ng-template #warning>
+            <li class="list-group-item justify-content-between list-group-item-warning">
+              {{exam.getTranslatedCourse()}}
+              <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span>
+            </li>
           </ng-template>
-        </ul>
+
+      </div>
       </div>
       <div class="col-md-2">
         <div class="right-header"> CREDITS </div>
