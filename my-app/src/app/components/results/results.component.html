@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-5">
-        <div class="right-header"> ADDED SCORES </div>
+        <h1 class="right-header"> ADDED SCORES </h1>
           <div *ngFor="let exam of _exam.examArr">
             <div class *ngIf="exam.getTranslatedCourse() !== 'SCORE DOES NOT TRANSLATE'; else invalid">
               <li class="list-group-item justify-content-between list-group-item-success"> {{exam.getType()}} {{exam.getName()}}
@@ -23,22 +23,32 @@
         </div>
         <button class="btn reset" (click)="reset()"> RESET </button>
       </div>
-      <div class="col-md-5">
-        <div class="right-header"> TRANSLATED COURSES </div>
-        <ul class="list-group" *ngFor="let exam of _exam.examArr">
-          <li class="list-group-item justify-content-between translated-courses" *ngIf="!exam.getDuplicateCourseExists(); else duplicate"> {{exam.getTranslatedCourse()}} <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span> </li>
-          <ng-template #duplicate>
-            <li class="list-group-item justify-content-between list-group-item-warning"> {{exam.getTranslatedCourse()}} <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span> </li>
-          </ng-template>
-        </ul>
-      </div>
-      <div class="col-md-2">
-        <div class="right-header"> CREDITS </div>
-        <div class="credits"> {{this._convertScore.totalHours}} </div>
-        <hr style="border-top: dotted 0.5px;">
 
-        <div class="right-header"> CLASS STANDING </div>
-        <div class="label"> {{this._convertScore.academicStanding}} </div>
+      <div class="col-md-5">
+        <h1 class="right-header"> TRANSLATED COURSES* </h1>
+        <div class="list-group" *ngFor="let exam of _exam.examArr">
+          <div class *ngIf="exam.getTranslatedCourse() !== 'SCORE DOES NOT TRANSLATE'; else warning">
+            <li class="list-group-item justify-content-between no-warning">
+              {{exam.getTranslatedCourse()}}
+              <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span>
+            </li>
+          </div>
+          <ng-template #warning>
+            <li class="list-group-item justify-content-between list-group-item-warning">
+              {{exam.getTranslatedCourse()}}
+              <span class="badge badge-default badge-pill"> {{exam.getTranslatedHours()}} </span>
+            </li>
+          </ng-template>
+        </div>
+        <h4 class="disclaimer">*DUPLICATE COURSES MAY RESULT FROM SUBMITTED SCORES</h4>
+      </div>
+
+      <div class="col-md-2">
+        <h1 class="right-header"> CREDITS </h1>
+        <h2 class="credits"> {{this._convertScore.totalHours}} </h2>
+        <hr style="border-top: dotted 0.5px;">
+        <h1 class="right-header"> CLASS STANDING </h1>
+        <h3 class="label"> {{this._convertScore.academicStanding}} </h3>
       </div>
     </div>
   </div>

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
-import { Exam } from 'app/exam';
+import { Exam } from '../models/exam';
 
 @Injectable()
 export class ExamService {
   exam = new Exam();
-  examArr: Exam[] =[];
+  examArr: Exam[] = [];
   duplicateExists: boolean = false;
   examArrEmpty: boolean = true;
   count = 0;
@@ -46,9 +46,9 @@ export class ExamService {
     this.examArr.splice(index, 1);
     this.count--;
 
-    if(this.examArr.length == 0) {
-    this.examArrEmpty = true;
-    this.count = 0;
+    if (this.examArr.length == 0) {
+      this.examArrEmpty = true;
+      this.count = 0;
   }
 
     for (var i = index; i < this.examArr.length; i++) {

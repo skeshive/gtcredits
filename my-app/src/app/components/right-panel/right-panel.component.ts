@@ -6,7 +6,6 @@ import { ScoreSelectService } from '../../services/score-select.service';
 import { ExamService } from '../../services/exam.service';
 import { ConvertScoreService } from '../../services/convert-score.service';
 
-
 @Component({
   selector: 'right-panel',
   templateUrl: './right-panel.component.html',
@@ -15,15 +14,8 @@ import { ConvertScoreService } from '../../services/convert-score.service';
 
 export class RightPanelComponent implements OnInit {
   constructor(
-  private _scoreSelect: ScoreSelectService,
-  private _exam: ExamService,
-  private _convertScore: ConvertScoreService) { }
+    private _scoreSelect: ScoreSelectService,
+    private _exam: ExamService,
+    private _convertScore: ConvertScoreService) { }
   ngOnInit() { }
-
-  displayResults: boolean = false;
-
-  public toggleDisplayResults() {
-    this.displayResults = true;
-  }
-
 }

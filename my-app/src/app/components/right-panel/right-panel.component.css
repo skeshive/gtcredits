@@ -4,7 +4,7 @@ body, html {
 
 .container {
   background-color: #FFD700;
-  text-align:center;
+  text-align: center;
 }
 
 .right-header {
@@ -48,14 +48,11 @@ body, html {
   border-color: #323232;
 }
 
-.submit {
+.btn-sm {
   background-color: #00254c;
   color: white;
   font-family: 'Raleway';
   font-size: 12px;
-  width: 10px;
-  height: 30px;
-  border: 0px;
 }
 
 .badge {

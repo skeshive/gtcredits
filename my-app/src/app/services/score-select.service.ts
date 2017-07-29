@@ -9,7 +9,8 @@ export class ScoreSelectService {
   ibStandardExamSelected: boolean = false;
   satExamSelected: boolean = false;
 
-  constructor(private _exam: ExamService) { }
+  constructor(
+    private _exam: ExamService) { }
 
   public apClicked(event) {
     this.reset();
