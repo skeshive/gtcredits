@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 export class Exam {
-  private name: string;
-  private score: number;
-  private type: string;
-  private index: number;
-  private translatedCourse: string = null;
-  private translatedHours: number = null;
-  private exceptionArray: string[] = [];
+  public name: string;
+  public score: number;
+  public type: string;
+  public index: number;
+  public translatedCourse: string = null;
+  public translatedHours: number = null;
+  public exceptionArray: string[] = [];
 
   constructor() { }
 

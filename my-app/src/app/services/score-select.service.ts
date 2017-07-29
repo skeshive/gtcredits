@@ -10,7 +10,7 @@ export class ScoreSelectService {
   satExamSelected: boolean = false;
 
   constructor(
-    private _exam: ExamService) { }
+    public _exam: ExamService) { }
 
   public apClicked(event) {
     this.reset();

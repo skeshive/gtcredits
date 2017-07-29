@@ -11,8 +11,8 @@ import { ConvertScoreService } from '../../services/convert-score.service';
 
 export class ResultsComponent implements OnInit {
   constructor(
-    private _exam: ExamService,
-    private _convertScore: ConvertScoreService) { }
+    public _exam: ExamService,
+    public _convertScore: ConvertScoreService) { }
   ngOnInit() { }
 
   public reset() {

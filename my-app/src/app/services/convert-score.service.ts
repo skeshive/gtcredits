@@ -7,13 +7,13 @@ import { ExamService } from './exam.service';
 
 @Injectable()
 export class ConvertScoreService {
-  private totalHours: number = 0;
-  private academicStanding: string = '';
-  private displayResults = false;
+  public totalHours: number = 0;
+  public academicStanding: string = '';
+  public displayResults = false;
 
   constructor(
-  private http: Http,
-  private _exam: ExamService) { }
+  public http: Http,
+  public _exam: ExamService) { }
 
   public separateData() {
     this.displayResults = true;
