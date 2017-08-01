@@ -15,7 +15,7 @@ export class ConvertScoreService {
   private http: Http,
   private _exam: ExamService) { }
 
-  public separateData() {
+  private separateData() {
     this.displayResults = true;
     this._exam.examArr.forEach(exam => {
       this.http.get(this.getRequestURL(exam)).map(res => res).subscribe(res => {
@@ -38,7 +38,7 @@ export class ConvertScoreService {
     });
   }
 
-  public getRequestURL(exam: Exam): string {
+  private getRequestURL(exam: Exam): string {
     switch(exam.getType()) {
       case 'AP':
         exam.setExceptionArray(["Chemistry", "Chinese", "Japanese", "Music Theory"]);
@@ -56,7 +56,7 @@ export class ConvertScoreService {
     return null;
   }
 
-  public parseData(exam, data) {
+  private parseData(exam, data) {
     if (data[exam.getName()]['scores'].includes(parseInt(exam.getScore()))) {
       exam.setTranslatedCourse(data[exam.getName()]['course']);
       exam.setTranslatedHours(data[exam.getName()]['hours']);
@@ -69,7 +69,7 @@ export class ConvertScoreService {
     }
   }
 
-  public parseExceptionData(exam, data) {
+  private parseExceptionData(exam, data) {
     if (parseInt(exam.getScore()) < data[exam.getName()]['scores'][0]) {
       exam.setTranslatedCourse('SCORE DOES NOT TRANSLATE');
       exam.setTranslatedHours(0);
@@ -91,14 +91,14 @@ export class ConvertScoreService {
     }
   }
 
-  public calculateTotalHours() {
+  private calculateTotalHours() {
     this._exam.examArr.forEach (exam => {
       this.totalHours = this.totalHours + exam.getTranslatedHours();
     });
     this.calculateAcademicStanding();
   }
 
-  public calculateAcademicStanding() {
+  private calculateAcademicStanding() {
     if (this.totalHours > 89) {
       this.academicStanding = "SENIOR";
     } else if (this.totalHours > 59) {
@@ -110,15 +110,15 @@ export class ConvertScoreService {
     }
   }
 
-  public setTotalHours(totalHours: number) {
+  private setTotalHours(totalHours: number) {
     this.totalHours = totalHours;
   }
 
-  public setAcademicStanding(academicStanding: string) {
+  private setAcademicStanding(academicStanding: string) {
     this.academicStanding = academicStanding;
   }
 
-  public setDisplayResults(displayResults: boolean) {
+  private setDisplayResults(displayResults: boolean) {
     this.displayResults = displayResults;
   }
 }

@@ -11,59 +11,59 @@ export class Exam {
 
   constructor() { }
 
-  public getName(): string {
+  private getName(): string {
     return this.name;
   }
 
-  public getScore(): number {
+  private getScore(): number {
     return this.score;
   }
 
-  public getType(): string {
+  private getType(): string {
     return this.type;
   }
 
-  public getIndex(): number {
+  private getIndex(): number {
     return this.index;
   }
 
-  public getTranslatedCourse(): string {
+  private getTranslatedCourse(): string {
     return this.translatedCourse;
   }
 
-  public getTranslatedHours(): number {
+  private getTranslatedHours(): number {
     return this.translatedHours;
   }
 
-  public getExceptionArray(): string[] {
+  private getExceptionArray(): string[] {
     return this.exceptionArray;
   }
 
-  public setName(name: string) {
+  private setName(name: string) {
     this.name = name;
   }
 
-  public setScore(score:number) {
+  private setScore(score:number) {
     this.score = score;
   }
 
-  public setType(type: string) {
+  private setType(type: string) {
     this.type = type;
   }
 
-  public setIndex(index: number) {
+  private setIndex(index: number) {
     this.index = index;
   }
 
-  public setTranslatedCourse(translatedCourse: string) {
+  private setTranslatedCourse(translatedCourse: string) {
     this.translatedCourse = translatedCourse;
   }
 
-  public setTranslatedHours(translatedHours: number) {
+  private setTranslatedHours(translatedHours: number) {
     this.translatedHours = translatedHours;
   }
 
-  public setExceptionArray(exceptionArray: string[]) {
+  private setExceptionArray(exceptionArray: string[]) {
     this.exceptionArray = exceptionArray;
   }
 }

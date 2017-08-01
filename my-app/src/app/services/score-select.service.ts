@@ -12,41 +12,41 @@ export class ScoreSelectService {
   constructor(
     private _exam: ExamService) { }
 
-  public apClicked(event) {
+  private apClicked(event) {
     this.reset();
     this.apExamSelected = true;
     this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "AP");
   }
 
-  public ibHighClicked(event) {
+  private ibHighClicked(event) {
     this.reset();
     this.ibHighExamSelected = true;
     this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "IB-High");
   }
 
-  public ibStandardClicked(event) {
+  private ibStandardClicked(event) {
     this.reset();
     this.ibStandardExamSelected = true;
     this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "IB-Standard");
   }
 
-  public satClicked(event) {
+  private satClicked(event) {
     this.reset();
     this.satExamSelected = true;
     this._exam.createNewExam(event.srcElement.attributes.id.nodeValue, "SAT");
   }
 
-  public scoreClicked(event) {
+  private scoreClicked(event) {
     this._exam.addSelectedScore(event.srcElement.attributes.id.nodeValue);
     this.reset();
   }
 
-  public satScoreClicked(score: number) {
+  private satScoreClicked(score: number) {
     this._exam.addSelectedScore(score);
     this.reset();
   }
 
-  public reset() {
+  private reset() {
     this.apExamSelected = false;
     this.ibHighExamSelected = false;
     this.ibStandardExamSelected = false;

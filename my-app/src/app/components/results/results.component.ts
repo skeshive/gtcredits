@@ -15,7 +15,7 @@ export class ResultsComponent implements OnInit {
     private _convertScore: ConvertScoreService) { }
   ngOnInit() { }
 
-  public reset() {
+  private reset() {
     this._convertScore.setDisplayResults(false);
     this._exam.removeAll();
     this._convertScore.setTotalHours(0);
