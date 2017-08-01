@@ -11,6 +11,6 @@ import { ScoreSelectService } from '../../services/score-select.service';
 
 export class SATComponent implements OnInit {
   constructor(
-    public _scoreSelect: ScoreSelectService) { }
+    private _scoreSelect: ScoreSelectService) { }
   ngOnInit() { }
 }

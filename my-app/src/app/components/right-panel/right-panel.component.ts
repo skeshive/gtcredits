@@ -14,8 +14,8 @@ import { ConvertScoreService } from '../../services/convert-score.service';
 
 export class RightPanelComponent implements OnInit {
   constructor(
-    public _scoreSelect: ScoreSelectService,
-    public _exam: ExamService,
-    public _convertScore: ConvertScoreService) { }
+    private _scoreSelect: ScoreSelectService,
+    private _exam: ExamService,
+    private _convertScore: ConvertScoreService) { }
   ngOnInit() { }
 }

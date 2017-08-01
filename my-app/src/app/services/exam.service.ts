@@ -10,13 +10,13 @@ export class ExamService {
   examArrEmpty: boolean = true;
   count = 0;
 
-  public createNewExam(name: string, type: string) {
+  private createNewExam(name: string, type: string) {
     this.exam.setName(name);
     this.exam.setType(type);
     this.exam.setIndex(this.count);
   }
 
-  public addSelectedScore(score: number) {
+  private addSelectedScore(score: number) {
     if (score >= 0 && score <= 800) {
       this.exam.setScore(score);
       this.checkDuplicates(this.exam);
@@ -25,7 +25,7 @@ export class ExamService {
     }
   }
 
-  public checkDuplicates(exam: Exam) {
+  private checkDuplicates(exam: Exam) {
     for (var i = 0; i < this.examArr.length; i++) {
       if ((this.examArr[i].getName() == exam.getName()) && (this.examArr[i].getType() == exam.getType())) {
         this.duplicateExists = true;
@@ -42,7 +42,7 @@ export class ExamService {
     }
   }
 
-  public removeSelectedScore(index: number) {
+  private removeSelectedScore(index: number) {
     this.examArr.splice(index, 1);
     this.count--;
 
@@ -56,7 +56,7 @@ export class ExamService {
     }
   }
 
-  public removeAll() {
+  private removeAll() {
     this.examArr.splice(0, this.examArr.length);
     this.examArrEmpty = true;
     this.count = 0;

@@ -11,11 +11,11 @@ import { ConvertScoreService } from '../../services/convert-score.service';
 
 export class ResultsComponent implements OnInit {
   constructor(
-    public _exam: ExamService,
-    public _convertScore: ConvertScoreService) { }
+    private _exam: ExamService,
+    private _convertScore: ConvertScoreService) { }
   ngOnInit() { }
 
-  public reset() {
+  private reset() {
     this._convertScore.setDisplayResults(false);
     this._exam.removeAll();
     this._convertScore.setTotalHours(0);

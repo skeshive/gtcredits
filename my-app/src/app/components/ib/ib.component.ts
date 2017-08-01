@@ -11,6 +11,6 @@ import { ScoreSelectService } from '../../services/score-select.service';
 
 export class IBComponent implements OnInit {
   constructor(
-    public _scoreSelect: ScoreSelectService) { }
+    private _scoreSelect: ScoreSelectService) { }
   ngOnInit() { }
 }

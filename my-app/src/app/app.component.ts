@@ -9,5 +9,5 @@ import { ConvertScoreService } from './services/convert-score.service';
 
 export class AppComponent {
   constructor(
-    public _convertScore: ConvertScoreService) { }
+    private _convertScore: ConvertScoreService) { }
 }
